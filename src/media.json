@@ -1,0 +1,539 @@
+{
+  "sakura_courtyard": {
+    "preview": "assets/images/sakura_courtyard_preview.jpg",
+    "concept": "assets/images/sakura_courtyard_concept.jpg",
+    "sessions": {
+      "combat_first": {
+        "rgb": "assets/videos/sakura_courtyard_combat_first_rgb.mp4",
+        "poster": "assets/images/sakura_courtyard_combat_first_display_v2.jpg",
+        "whitebox": "assets/videos/sakura_courtyard_combat_first_whitebox.mp4",
+        "depth_preview": "assets/videos/sakura_courtyard_combat_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/sakura_courtyard_combat_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/sakura_courtyard_combat_first_skeleton_overlay.mp4"
+      },
+      "combat_third": {
+        "rgb": "assets/videos/sakura_courtyard_combat_third_rgb_display_v2.mp4",
+        "poster": "assets/images/sakura_courtyard_combat_third_display_v2.jpg",
+        "whitebox": "assets/videos/sakura_courtyard_combat_third_whitebox.mp4",
+        "depth_preview": "assets/videos/sakura_courtyard_combat_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/sakura_courtyard_combat_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/sakura_courtyard_combat_third_skeleton_overlay.mp4"
+      },
+      "combat_isometric": {
+        "rgb": "assets/videos/sakura_courtyard_combat_isometric_rgb.mp4",
+        "poster": "assets/images/sakura_courtyard_combat_isometric_display_v2.jpg",
+        "whitebox": "assets/videos/sakura_courtyard_combat_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/sakura_courtyard_combat_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/sakura_courtyard_combat_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/sakura_courtyard_combat_isometric_skeleton_overlay.mp4"
+      },
+      "exploration_first": {
+        "rgb": "assets/videos/sakura_courtyard_exploration_first_rgb.mp4",
+        "poster": "assets/images/sakura_courtyard_exploration_first_display_v2.jpg",
+        "whitebox": "assets/videos/sakura_courtyard_exploration_first_whitebox.mp4",
+        "depth_preview": "assets/videos/sakura_courtyard_exploration_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/sakura_courtyard_exploration_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/sakura_courtyard_exploration_first_skeleton_overlay.mp4"
+      },
+      "exploration_third": {
+        "rgb": "assets/videos/sakura_courtyard_exploration_third_rgb_display_v2.mp4",
+        "poster": "assets/images/sakura_courtyard_exploration_third_display_v2.jpg",
+        "whitebox": "assets/videos/sakura_courtyard_exploration_third_whitebox.mp4",
+        "depth_preview": "assets/videos/sakura_courtyard_exploration_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/sakura_courtyard_exploration_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/sakura_courtyard_exploration_third_skeleton_overlay.mp4"
+      },
+      "exploration_isometric": {
+        "rgb": "assets/videos/sakura_courtyard_exploration_isometric_rgb.mp4",
+        "poster": "assets/images/sakura_courtyard_exploration_isometric_display_v2.jpg",
+        "whitebox": "assets/videos/sakura_courtyard_exploration_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/sakura_courtyard_exploration_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/sakura_courtyard_exploration_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/sakura_courtyard_exploration_isometric_skeleton_overlay.mp4"
+      }
+    },
+    "aligned": {
+      "depth": "assets/images/sakura_aligned_depth.jpg",
+      "semantics": "assets/images/sakura_aligned_semantics.jpg",
+      "skeleton": "assets/images/sakura_aligned_skeleton.jpg",
+      "whitebox": "assets/images/sakura_aligned_whitebox.jpg",
+      "rgb": "assets/images/sakura_aligned_rgb.jpg"
+    },
+    "cameras": {
+      "exploration_third": "assets/images/sakura_camera_third.jpg",
+      "exploration_isometric": "assets/images/sakura_camera_isometric.jpg",
+      "exploration_first": "assets/images/sakura_camera_first.jpg",
+      "combat_first": "assets/images/sakura_courtyard_combat_first_display_v2.jpg",
+      "combat_third": "assets/images/sakura_courtyard_combat_third_display_v2.jpg",
+      "combat_isometric": "assets/images/sakura_courtyard_combat_isometric_display_v2.jpg"
+    },
+    "gameplayPosters": {
+      "exploration": "assets/images/sakura_exploration.jpg",
+      "combat": "assets/images/sakura_combat.jpg"
+    },
+    "miniature": {
+      "model": "assets/models/sakura_courtyard_panorama.glb",
+      "source": "Archived authored scene geometry, reduced for WebGL display. Unreal gameplay captures are shown below."
+    }
+  },
+  "neon_switchyard": {
+    "preview": "assets/images/neon_switchyard_preview.jpg",
+    "concept": "assets/images/neon_switchyard_concept.jpg",
+    "sessions": {
+      "combat_first": {
+        "rgb": "assets/videos/neon_switchyard_combat_first_rgb.mp4",
+        "poster": "assets/images/neon_switchyard_combat_first.jpg",
+        "whitebox": "assets/videos/neon_switchyard_combat_first_whitebox.mp4",
+        "depth_preview": "assets/videos/neon_switchyard_combat_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/neon_switchyard_combat_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/neon_switchyard_combat_first_skeleton_overlay.mp4"
+      },
+      "combat_third": {
+        "rgb": "assets/videos/neon_switchyard_combat_third_rgb.mp4",
+        "poster": "assets/images/neon_switchyard_combat_third.jpg",
+        "whitebox": "assets/videos/neon_switchyard_combat_third_whitebox.mp4",
+        "depth_preview": "assets/videos/neon_switchyard_combat_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/neon_switchyard_combat_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/neon_switchyard_combat_third_skeleton_overlay.mp4"
+      },
+      "combat_isometric": {
+        "rgb": "assets/videos/neon_switchyard_combat_isometric_rgb.mp4",
+        "poster": "assets/images/neon_switchyard_combat_isometric.jpg",
+        "whitebox": "assets/videos/neon_switchyard_combat_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/neon_switchyard_combat_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/neon_switchyard_combat_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/neon_switchyard_combat_isometric_skeleton_overlay.mp4"
+      },
+      "exploration_first": {
+        "rgb": "assets/videos/neon_switchyard_exploration_first_rgb.mp4",
+        "poster": "assets/images/neon_switchyard_exploration_first.jpg",
+        "whitebox": "assets/videos/neon_switchyard_exploration_first_whitebox.mp4",
+        "depth_preview": "assets/videos/neon_switchyard_exploration_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/neon_switchyard_exploration_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/neon_switchyard_exploration_first_skeleton_overlay.mp4"
+      },
+      "exploration_third": {
+        "rgb": "assets/videos/neon_switchyard_exploration_third_rgb.mp4",
+        "poster": "assets/images/neon_switchyard_exploration_third.jpg",
+        "whitebox": "assets/videos/neon_switchyard_exploration_third_whitebox.mp4",
+        "depth_preview": "assets/videos/neon_switchyard_exploration_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/neon_switchyard_exploration_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/neon_switchyard_exploration_third_skeleton_overlay.mp4"
+      },
+      "exploration_isometric": {
+        "rgb": "assets/videos/neon_switchyard_exploration_isometric_rgb.mp4",
+        "poster": "assets/images/neon_switchyard_exploration_isometric.jpg",
+        "whitebox": "assets/videos/neon_switchyard_exploration_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/neon_switchyard_exploration_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/neon_switchyard_exploration_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/neon_switchyard_exploration_isometric_skeleton_overlay.mp4"
+      }
+    },
+    "aligned": {
+      "rgb": "assets/images/neon_switchyard_aligned_rgb.jpg",
+      "depth": "assets/images/neon_switchyard_aligned_depth.jpg",
+      "skeleton": "assets/images/neon_switchyard_aligned_skeleton.jpg",
+      "semantics": "assets/images/neon_switchyard_aligned_semantics.jpg",
+      "whitebox": "assets/images/neon_switchyard_aligned_whitebox.jpg"
+    },
+    "miniature": {
+      "model": "assets/models/neon_switchyard_panorama.glb",
+      "source": "Archived authored scene geometry, reduced for WebGL display. Unreal gameplay captures are shown below."
+    }
+  },
+  "desert_caravanserai": {
+    "sessions": {
+      "combat_first": {
+        "rgb": "assets/videos/desert_caravanserai_combat_first_rgb.mp4",
+        "poster": "assets/images/desert_caravanserai_combat_first_poster.jpg"
+      },
+      "combat_third": {
+        "rgb": "assets/videos/desert_caravanserai_combat_third_rgb.mp4",
+        "poster": "assets/images/desert_caravanserai_combat_third_poster.jpg"
+      },
+      "combat_isometric": {
+        "rgb": "assets/videos/desert_caravanserai_combat_isometric_rgb.mp4",
+        "poster": "assets/images/desert_caravanserai_combat_isometric_poster.jpg"
+      },
+      "exploration_first": {
+        "rgb": "assets/videos/desert_caravanserai_exploration_first_rgb.mp4",
+        "poster": "assets/images/desert_caravanserai_exploration_first_poster.jpg"
+      },
+      "exploration_third": {
+        "rgb": "assets/videos/desert_caravanserai_exploration_third_rgb.mp4",
+        "poster": "assets/images/desert_caravanserai_exploration_third_poster.jpg"
+      },
+      "exploration_isometric": {
+        "rgb": "assets/videos/desert_caravanserai_exploration_isometric_rgb.mp4",
+        "poster": "assets/images/desert_caravanserai_exploration_isometric_poster.jpg"
+      }
+    },
+    "cameras": {
+      "combat_first": "assets/images/desert_caravanserai_combat_first_camera.jpg",
+      "combat_third": "assets/images/desert_caravanserai_combat_third_camera.jpg",
+      "combat_isometric": "assets/images/desert_caravanserai_combat_isometric_camera.jpg",
+      "exploration_first": "assets/images/desert_caravanserai_exploration_first_camera.jpg",
+      "exploration_third": "assets/images/desert_caravanserai_exploration_third_camera.jpg",
+      "exploration_isometric": "assets/images/desert_caravanserai_exploration_isometric_camera.jpg"
+    },
+    "aligned": {
+      "rgb": "assets/images/desert_caravanserai_aligned_rgb.png",
+      "depth": "assets/images/desert_caravanserai_aligned_depth.png",
+      "semantics": "assets/images/desert_caravanserai_aligned_semantics.png",
+      "skeleton": "assets/images/desert_caravanserai_aligned_skeleton.png",
+      "whitebox": "assets/images/desert_caravanserai_aligned_whitebox.png"
+    },
+    "gameplayPosters": {
+      "exploration": "assets/images/desert_caravanserai_exploration_third_poster.jpg",
+      "combat": "assets/images/desert_caravanserai_combat_third_poster.jpg"
+    },
+    "concept": "assets/images/desert_caravanserai_concept.jpg",
+    "preview": "assets/images/desert_caravanserai_exploration_third_poster.jpg",
+    "miniature": {
+      "model": "assets/models/desert_caravanserai_panorama.glb",
+      "source": "Archived authored scene geometry, reduced for WebGL display. Unreal gameplay captures are shown below."
+    }
+  },
+  "snowbound_outpost": {
+    "sessions": {
+      "combat_first": {
+        "rgb": "assets/videos/snowbound_outpost_combat_first_rgb.mp4",
+        "poster": "assets/images/snowbound_outpost_combat_first_poster.jpg"
+      },
+      "combat_third": {
+        "rgb": "assets/videos/snowbound_outpost_combat_third_rgb.mp4",
+        "poster": "assets/images/snowbound_outpost_combat_third_poster.jpg"
+      },
+      "combat_isometric": {
+        "rgb": "assets/videos/snowbound_outpost_combat_isometric_rgb.mp4",
+        "poster": "assets/images/snowbound_outpost_combat_isometric_poster.jpg"
+      },
+      "exploration_first": {
+        "rgb": "assets/videos/snowbound_outpost_exploration_first_rgb.mp4",
+        "poster": "assets/images/snowbound_outpost_exploration_first_poster.jpg"
+      },
+      "exploration_third": {
+        "rgb": "assets/videos/snowbound_outpost_exploration_third_rgb.mp4",
+        "poster": "assets/images/snowbound_outpost_exploration_third_poster.jpg"
+      },
+      "exploration_isometric": {
+        "rgb": "assets/videos/snowbound_outpost_exploration_isometric_rgb.mp4",
+        "poster": "assets/images/snowbound_outpost_exploration_isometric_poster.jpg"
+      }
+    },
+    "cameras": {
+      "combat_first": "assets/images/snowbound_outpost_combat_first_camera.jpg",
+      "combat_third": "assets/images/snowbound_outpost_combat_third_camera.jpg",
+      "combat_isometric": "assets/images/snowbound_outpost_combat_isometric_camera.jpg",
+      "exploration_first": "assets/images/snowbound_outpost_exploration_first_camera.jpg",
+      "exploration_third": "assets/images/snowbound_outpost_exploration_third_camera.jpg",
+      "exploration_isometric": "assets/images/snowbound_outpost_exploration_isometric_camera.jpg"
+    },
+    "aligned": {
+      "rgb": "assets/images/snowbound_outpost_aligned_rgb.png",
+      "depth": "assets/images/snowbound_outpost_aligned_depth.png",
+      "semantics": "assets/images/snowbound_outpost_aligned_semantics.png",
+      "skeleton": "assets/images/snowbound_outpost_aligned_skeleton.png",
+      "whitebox": "assets/images/snowbound_outpost_aligned_whitebox.png"
+    },
+    "gameplayPosters": {
+      "exploration": "assets/images/snowbound_outpost_exploration_third_poster.jpg",
+      "combat": "assets/images/snowbound_outpost_combat_third_poster.jpg"
+    },
+    "concept": "assets/images/snowbound_outpost_concept.jpg",
+    "preview": "assets/images/snowbound_outpost_exploration_third_poster.jpg",
+    "miniature": {
+      "model": "assets/models/snowbound_outpost_panorama.glb",
+      "source": "Archived authored scene geometry, reduced for WebGL display. Unreal gameplay captures are shown below."
+    }
+  },
+  "amber_cloister": {
+    "preview": "assets/images/amber_cloister_preview.jpg",
+    "concept": "assets/images/amber_cloister_concept.jpg",
+    "sessions": {
+      "combat_first": {
+        "rgb": "assets/videos/amber_cloister_combat_first_rgb.mp4",
+        "poster": "assets/images/amber_cloister_combat_first.jpg",
+        "whitebox": "assets/videos/amber_cloister_combat_first_whitebox.mp4",
+        "depth_preview": "assets/videos/amber_cloister_combat_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/amber_cloister_combat_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/amber_cloister_combat_first_skeleton_overlay.mp4"
+      },
+      "combat_third": {
+        "rgb": "assets/videos/amber_cloister_combat_third_rgb.mp4",
+        "poster": "assets/images/amber_cloister_combat_third.jpg",
+        "whitebox": "assets/videos/amber_cloister_combat_third_whitebox.mp4",
+        "depth_preview": "assets/videos/amber_cloister_combat_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/amber_cloister_combat_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/amber_cloister_combat_third_skeleton_overlay.mp4"
+      },
+      "combat_isometric": {
+        "rgb": "assets/videos/amber_cloister_combat_isometric_rgb.mp4",
+        "poster": "assets/images/amber_cloister_combat_isometric.jpg",
+        "whitebox": "assets/videos/amber_cloister_combat_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/amber_cloister_combat_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/amber_cloister_combat_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/amber_cloister_combat_isometric_skeleton_overlay.mp4"
+      },
+      "exploration_first": {
+        "rgb": "assets/videos/amber_cloister_exploration_first_rgb.mp4",
+        "poster": "assets/images/amber_cloister_exploration_first.jpg",
+        "whitebox": "assets/videos/amber_cloister_exploration_first_whitebox.mp4",
+        "depth_preview": "assets/videos/amber_cloister_exploration_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/amber_cloister_exploration_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/amber_cloister_exploration_first_skeleton_overlay.mp4"
+      },
+      "exploration_third": {
+        "rgb": "assets/videos/amber_cloister_exploration_third_rgb.mp4",
+        "poster": "assets/images/amber_cloister_exploration_third.jpg",
+        "whitebox": "assets/videos/amber_cloister_exploration_third_whitebox.mp4",
+        "depth_preview": "assets/videos/amber_cloister_exploration_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/amber_cloister_exploration_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/amber_cloister_exploration_third_skeleton_overlay.mp4"
+      },
+      "exploration_isometric": {
+        "rgb": "assets/videos/amber_cloister_exploration_isometric_rgb.mp4",
+        "poster": "assets/images/amber_cloister_exploration_isometric.jpg",
+        "whitebox": "assets/videos/amber_cloister_exploration_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/amber_cloister_exploration_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/amber_cloister_exploration_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/amber_cloister_exploration_isometric_skeleton_overlay.mp4"
+      }
+    },
+    "aligned": {
+      "rgb": "assets/images/amber_cloister_aligned_rgb.jpg",
+      "depth": "assets/images/amber_cloister_aligned_depth.jpg",
+      "skeleton": "assets/images/amber_cloister_aligned_skeleton.jpg",
+      "semantics": "assets/images/amber_cloister_aligned_semantics.jpg",
+      "whitebox": "assets/images/amber_cloister_aligned_whitebox.jpg"
+    },
+    "miniature": {
+      "model": "assets/models/amber_cloister_panorama.glb",
+      "source": "Archived authored scene geometry, reduced for WebGL display. Unreal gameplay captures are shown below."
+    }
+  },
+  "steampunk_foundry": {
+    "sessions": {
+      "combat_first": {
+        "rgb": "assets/videos/steampunk_foundry_combat_first_rgb.mp4",
+        "poster": "assets/images/steampunk_foundry_combat_first_poster.jpg"
+      },
+      "combat_third": {
+        "rgb": "assets/videos/steampunk_foundry_combat_third_rgb.mp4",
+        "poster": "assets/images/steampunk_foundry_combat_third_poster.jpg"
+      },
+      "combat_isometric": {
+        "rgb": "assets/videos/steampunk_foundry_combat_isometric_rgb.mp4",
+        "poster": "assets/images/steampunk_foundry_combat_isometric_poster.jpg"
+      },
+      "exploration_first": {
+        "rgb": "assets/videos/steampunk_foundry_exploration_first_rgb.mp4",
+        "poster": "assets/images/steampunk_foundry_exploration_first_poster.jpg"
+      },
+      "exploration_third": {
+        "rgb": "assets/videos/steampunk_foundry_exploration_third_rgb.mp4",
+        "poster": "assets/images/steampunk_foundry_exploration_third_poster.jpg"
+      },
+      "exploration_isometric": {
+        "rgb": "assets/videos/steampunk_foundry_exploration_isometric_rgb.mp4",
+        "poster": "assets/images/steampunk_foundry_exploration_isometric_poster.jpg"
+      }
+    },
+    "cameras": {
+      "combat_first": "assets/images/steampunk_foundry_combat_first_camera.jpg",
+      "combat_third": "assets/images/steampunk_foundry_combat_third_camera.jpg",
+      "combat_isometric": "assets/images/steampunk_foundry_combat_isometric_camera.jpg",
+      "exploration_first": "assets/images/steampunk_foundry_exploration_first_camera.jpg",
+      "exploration_third": "assets/images/steampunk_foundry_exploration_third_camera.jpg",
+      "exploration_isometric": "assets/images/steampunk_foundry_exploration_isometric_camera.jpg"
+    },
+    "aligned": {
+      "rgb": "assets/images/steampunk_foundry_aligned_rgb.jpg",
+      "depth": "assets/images/steampunk_foundry_aligned_depth.jpg",
+      "semantics": "assets/images/steampunk_foundry_aligned_semantics.jpg",
+      "skeleton": "assets/images/steampunk_foundry_aligned_skeleton.jpg",
+      "whitebox": "assets/images/steampunk_foundry_aligned_whitebox.jpg"
+    },
+    "gameplayPosters": {
+      "exploration": "assets/images/steampunk_foundry_exploration_third_poster.jpg",
+      "combat": "assets/images/steampunk_foundry_combat_third_poster.jpg"
+    },
+    "concept": "assets/images/steampunk_foundry_concept.jpg",
+    "preview": "assets/images/steampunk_foundry_exploration_third_poster.jpg",
+    "miniature": {
+      "model": "assets/models/steampunk_foundry_panorama.glb",
+      "source": "Archived authored scene geometry, reduced for WebGL display. Unreal gameplay captures are shown below."
+    }
+  },
+  "mediterranean_courtyard": {
+    "sessions": {
+      "combat_first": {
+        "poster": "assets/images/mediterranean_courtyard_combat_first_poster.jpg",
+        "rgb": "assets/videos/mediterranean_courtyard_combat_first_rgb.mp4",
+        "whitebox": "assets/videos/mediterranean_courtyard_combat_first_whitebox.mp4",
+        "depth_preview": "assets/videos/mediterranean_courtyard_combat_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/mediterranean_courtyard_combat_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/mediterranean_courtyard_combat_first_skeleton_overlay.mp4"
+      },
+      "combat_third": {
+        "poster": "assets/images/mediterranean_courtyard_combat_third_poster.jpg",
+        "rgb": "assets/videos/mediterranean_courtyard_combat_third_rgb.mp4",
+        "whitebox": "assets/videos/mediterranean_courtyard_combat_third_whitebox.mp4",
+        "depth_preview": "assets/videos/mediterranean_courtyard_combat_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/mediterranean_courtyard_combat_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/mediterranean_courtyard_combat_third_skeleton_overlay.mp4"
+      },
+      "combat_isometric": {
+        "poster": "assets/images/mediterranean_courtyard_combat_isometric_poster.jpg",
+        "rgb": "assets/videos/mediterranean_courtyard_combat_isometric_rgb.mp4",
+        "whitebox": "assets/videos/mediterranean_courtyard_combat_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/mediterranean_courtyard_combat_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/mediterranean_courtyard_combat_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/mediterranean_courtyard_combat_isometric_skeleton_overlay.mp4"
+      },
+      "exploration_first": {
+        "poster": "assets/images/mediterranean_courtyard_exploration_first_poster.jpg",
+        "rgb": "assets/videos/mediterranean_courtyard_exploration_first_rgb.mp4",
+        "whitebox": "assets/videos/mediterranean_courtyard_exploration_first_whitebox.mp4",
+        "depth_preview": "assets/videos/mediterranean_courtyard_exploration_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/mediterranean_courtyard_exploration_first_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/mediterranean_courtyard_exploration_first_skeleton_overlay.mp4"
+      },
+      "exploration_third": {
+        "poster": "assets/images/mediterranean_courtyard_exploration_third_poster.jpg",
+        "rgb": "assets/videos/mediterranean_courtyard_exploration_third_rgb.mp4",
+        "whitebox": "assets/videos/mediterranean_courtyard_exploration_third_whitebox.mp4",
+        "depth_preview": "assets/videos/mediterranean_courtyard_exploration_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/mediterranean_courtyard_exploration_third_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/mediterranean_courtyard_exploration_third_skeleton_overlay.mp4"
+      },
+      "exploration_isometric": {
+        "poster": "assets/images/mediterranean_courtyard_exploration_isometric_poster.jpg",
+        "rgb": "assets/videos/mediterranean_courtyard_exploration_isometric_rgb.mp4",
+        "whitebox": "assets/videos/mediterranean_courtyard_exploration_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/mediterranean_courtyard_exploration_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/mediterranean_courtyard_exploration_isometric_semantic_preview.mp4",
+        "skeleton_overlay": "assets/videos/mediterranean_courtyard_exploration_isometric_skeleton_overlay.mp4"
+      }
+    },
+    "cameras": {
+      "combat_first": "assets/images/mediterranean_courtyard_combat_first_camera.jpg",
+      "combat_third": "assets/images/mediterranean_courtyard_combat_third_camera.jpg",
+      "combat_isometric": "assets/images/mediterranean_courtyard_combat_isometric_camera.jpg",
+      "exploration_first": "assets/images/mediterranean_courtyard_exploration_first_camera.jpg",
+      "exploration_third": "assets/images/mediterranean_courtyard_exploration_third_camera.jpg",
+      "exploration_isometric": "assets/images/mediterranean_courtyard_exploration_isometric_camera.jpg"
+    },
+    "aligned": {
+      "rgb": "assets/images/mediterranean_courtyard_aligned_rgb.jpg",
+      "depth": "assets/images/mediterranean_courtyard_aligned_depth.jpg",
+      "semantics": "assets/images/mediterranean_courtyard_aligned_semantics.jpg",
+      "skeleton": "assets/images/mediterranean_courtyard_aligned_skeleton.jpg",
+      "whitebox": "assets/images/mediterranean_courtyard_aligned_whitebox.jpg"
+    },
+    "gameplayPosters": {
+      "exploration": "assets/images/mediterranean_courtyard_exploration_third_poster.jpg",
+      "combat": "assets/images/mediterranean_courtyard_combat_third_poster.jpg"
+    },
+    "preview": "assets/images/mediterranean_courtyard_exploration_third_poster.jpg",
+    "miniature": {
+      "model": "assets/models/mediterranean_courtyard_panorama.glb",
+      "source": "Current authored scene geometry, reduced for WebGL display. Unreal gameplay captures are shown below."
+    },
+    "concept": "assets/images/mediterranean_courtyard_concept.jpg"
+  },
+  "underwater_habitat": {
+    "sessions": {
+      "combat_first": {
+        "poster": "assets/images/underwater_habitat_combat_first_poster.jpg",
+        "rgb": "assets/videos/underwater_habitat_combat_first_rgb.mp4",
+        "whitebox": "assets/videos/underwater_habitat_combat_first_whitebox.mp4",
+        "depth_preview": "assets/videos/underwater_habitat_combat_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/underwater_habitat_combat_first_semantic_preview.mp4",
+        "skeleton": "assets/videos/underwater_habitat_combat_first_skeleton.mp4"
+      },
+      "combat_third": {
+        "poster": "assets/images/underwater_habitat_combat_third_poster.jpg",
+        "rgb": "assets/videos/underwater_habitat_combat_third_rgb.mp4",
+        "whitebox": "assets/videos/underwater_habitat_combat_third_whitebox.mp4",
+        "depth_preview": "assets/videos/underwater_habitat_combat_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/underwater_habitat_combat_third_semantic_preview.mp4",
+        "skeleton": "assets/videos/underwater_habitat_combat_third_skeleton.mp4"
+      },
+      "combat_isometric": {
+        "poster": "assets/images/underwater_habitat_combat_isometric_poster.jpg",
+        "rgb": "assets/videos/underwater_habitat_combat_isometric_rgb.mp4",
+        "whitebox": "assets/videos/underwater_habitat_combat_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/underwater_habitat_combat_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/underwater_habitat_combat_isometric_semantic_preview.mp4",
+        "skeleton": "assets/videos/underwater_habitat_combat_isometric_skeleton.mp4"
+      },
+      "exploration_first": {
+        "poster": "assets/images/underwater_habitat_exploration_first_poster.jpg",
+        "rgb": "assets/videos/underwater_habitat_exploration_first_rgb.mp4",
+        "whitebox": "assets/videos/underwater_habitat_exploration_first_whitebox.mp4",
+        "depth_preview": "assets/videos/underwater_habitat_exploration_first_depth_preview.mp4",
+        "semantic_preview": "assets/videos/underwater_habitat_exploration_first_semantic_preview.mp4",
+        "skeleton": "assets/videos/underwater_habitat_exploration_first_skeleton.mp4"
+      },
+      "exploration_third": {
+        "poster": "assets/images/underwater_habitat_exploration_third_poster.jpg",
+        "rgb": "assets/videos/underwater_habitat_exploration_third_rgb.mp4",
+        "whitebox": "assets/videos/underwater_habitat_exploration_third_whitebox.mp4",
+        "depth_preview": "assets/videos/underwater_habitat_exploration_third_depth_preview.mp4",
+        "semantic_preview": "assets/videos/underwater_habitat_exploration_third_semantic_preview.mp4",
+        "skeleton": "assets/videos/underwater_habitat_exploration_third_skeleton.mp4"
+      },
+      "exploration_isometric": {
+        "poster": "assets/images/underwater_habitat_exploration_isometric_poster.jpg",
+        "rgb": "assets/videos/underwater_habitat_exploration_isometric_rgb.mp4",
+        "whitebox": "assets/videos/underwater_habitat_exploration_isometric_whitebox.mp4",
+        "depth_preview": "assets/videos/underwater_habitat_exploration_isometric_depth_preview.mp4",
+        "semantic_preview": "assets/videos/underwater_habitat_exploration_isometric_semantic_preview.mp4",
+        "skeleton": "assets/videos/underwater_habitat_exploration_isometric_skeleton.mp4"
+      }
+    },
+    "cameras": {
+      "combat_first": "assets/images/underwater_habitat_combat_first_camera.jpg",
+      "combat_third": "assets/images/underwater_habitat_combat_third_camera.jpg",
+      "combat_isometric": "assets/images/underwater_habitat_combat_isometric_camera.jpg",
+      "exploration_first": "assets/images/underwater_habitat_exploration_first_camera.jpg",
+      "exploration_third": "assets/images/underwater_habitat_exploration_third_camera.jpg",
+      "exploration_isometric": "assets/images/underwater_habitat_exploration_isometric_camera.jpg"
+    },
+    "aligned": {
+      "rgb": "assets/images/underwater_habitat_exploration_aligned_rgb.jpg",
+      "depth": "assets/images/underwater_habitat_exploration_aligned_depth.jpg",
+      "semantics": "assets/images/underwater_habitat_exploration_aligned_semantics.jpg",
+      "skeleton": "assets/images/underwater_habitat_exploration_aligned_skeleton.jpg",
+      "whitebox": "assets/images/underwater_habitat_exploration_aligned_whitebox.jpg"
+    },
+    "alignedByActivity": {
+      "exploration": {
+        "rgb": "assets/images/underwater_habitat_exploration_aligned_rgb.jpg",
+        "depth": "assets/images/underwater_habitat_exploration_aligned_depth.jpg",
+        "semantics": "assets/images/underwater_habitat_exploration_aligned_semantics.jpg",
+        "skeleton": "assets/images/underwater_habitat_exploration_aligned_skeleton.jpg",
+        "whitebox": "assets/images/underwater_habitat_exploration_aligned_whitebox.jpg"
+      },
+      "combat": {
+        "rgb": "assets/images/underwater_habitat_combat_aligned_rgb.jpg",
+        "depth": "assets/images/underwater_habitat_combat_aligned_depth.jpg",
+        "semantics": "assets/images/underwater_habitat_combat_aligned_semantics.jpg",
+        "skeleton": "assets/images/underwater_habitat_combat_aligned_skeleton.jpg",
+        "whitebox": "assets/images/underwater_habitat_combat_aligned_whitebox.jpg"
+      }
+    },
+    "gameplayPosters": {
+      "exploration": "assets/images/underwater_habitat_exploration_third_poster.jpg",
+      "combat": "assets/images/underwater_habitat_combat_third_poster.jpg"
+    },
+    "preview": "assets/images/underwater_habitat_overview.jpg",
+    "concept": "assets/images/underwater_habitat_concept.jpg",
+    "miniature": {
+      "model": "assets/models/underwater_habitat_panorama.glb",
+      "source": "Accepted authored habitat geometry, reduced for WebGL presentation. Gameplay retains the Unreal rendering."
+    },
+    "captureNote": "Through glass, depth and semantic labels describe the first opaque surface behind it. The structural whitebox retains the hull and frames."
+  }
+}
