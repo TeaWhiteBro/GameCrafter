@@ -85,7 +85,7 @@ def main():
     except OSError as exc:
         parser.exit(1, f'Could not start the local server: {exc}\nTry --port 8766.\n')
     url = f'http://127.0.0.1:{args.port}/'
-    print(f'WorldCrafter: {url}\nPress Ctrl+C to stop.', flush=True)
+    print(f'GameCrafter: {url}\nPress Ctrl+C to stop.', flush=True)
     if not args.no_browser:
         webbrowser.open(url)
     try:
