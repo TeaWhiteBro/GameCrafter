@@ -1,6 +1,6 @@
 # GameCrafter project page
 
-**GameCrafter: An Agentic Framework for Scalable Multi-Gameplay Game World Generation**
+**GameCrafter: A World-Centric Agentic Framework for Scalable Multi-Gameplay Game World Generation**
 
 [中文说明](README.zh-CN.md)
 
