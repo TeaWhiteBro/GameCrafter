@@ -48,8 +48,8 @@ Sunward Sentinel uses current-run rigged characters, generated olive/fountain/fl
 
 Abyssal Lock uses the accepted current-run diver player, pressure-suit Boss, submersible, coral and pressure relay, plus the authored habitat geometry. No other case assets were used for this production. The separate production archive preserves original source references for the display exports.
 
-## Cyberpunk teaser
+## Dune Court teaser
 
-The teaser combines a high-resolution render of the six-sector web diorama with actual Neon Switchyard Unreal Engine captures. The cyberpunk sector faces forward. Exploration shows the transit entrance; the three camera views show the repair-depot area. These independent viewpoint captures are not asserted to be simultaneous.
+The teaser combines a high-resolution render of the six-sector web diorama with actual Dune Court Unreal Engine captures. The desert sector faces forward, with a pale blue-gray presentation background. Exploration shows the outward entrance route; the three camera panels show the courtyard. These independent viewpoint captures are not asserted to be simultaneous. Capture colors are unchanged.
 
-The combat RGB and four accompanying modalities come from frame 240 of the same third-person combat sequence (native 640 × 360). Skeleton transparency is composited on black; depth uses a fixed inverse linear camera-Z display from 0.5 to 30 m; semantic IDs use a fixed class palette. Cropping and proportional resizing are for presentation. The web diorama remains a representative composition, not an Unreal level export.
+The combat RGB and four accompanying modalities come from frame 240 of the same third-person combat sequence (native 640 × 360). Skeleton transparency is composited on black; depth uses a fixed inverse linear camera-Z display from 0.5 to 30 m; semantic IDs use the same fixed class palette as the previous teaser. Cropping and proportional resizing are for presentation. The four modality panels preserve the complete source frame extent. The web diorama remains a representative composition, not an Unreal level export.
