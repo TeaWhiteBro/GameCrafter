@@ -8,7 +8,7 @@ let diorama=null,resultCase=worlds.find(w=>w.id===requestedCase)||worlds[0],acti
 const baseModalityNote=$('.modality-note').textContent;
 const worldSelector=$('#world-selector');
 const panorama=createPanorama({canvas:$('#panorama-canvas'),poster:$('#panorama-poster'),status:$('#panorama-status'),loadButton:$('#panorama-load'),resetButton:$('#panorama-reset')});
-window.worldCrafterPanorama=panorama;
+window.gameCrafterPanorama=panorama;
 discWorlds.forEach((w,i)=>{
  const button=document.createElement('button');button.type='button';button.role='tab';button.style.setProperty('--case-color',w.color);button.innerHTML=`<i></i>${w.short}`;button.setAttribute('aria-selected',String(i===0));button.classList.toggle('active',i===0);button.addEventListener('click',()=>diorama?.select(i));worldSelector.append(button);
 });
@@ -17,18 +17,29 @@ worlds.forEach((w,i)=>{
 });
 function setActive(i){const w=discWorlds[i];$('#world-index').textContent=`${String(i+1).padStart(2,'0')} / ${String(discWorlds.length).padStart(2,'0')}`;$('#world-name').textContent=w.name;$('#world-description').textContent=w.description;[...worldSelector.children].forEach((b,j)=>{b.classList.toggle('active',i===j);b.setAttribute('aria-selected',String(i===j));});}
 const canvas=$('#world-canvas');
-createDiorama({canvas,worlds:discWorlds,onActive:setActive,onProgress:p=>{$('#loading-label').textContent=`Preparing the worlds · ${Math.round(p*100)}%`;}}).then(d=>{diorama=d;const requestedIndex=discWorlds.findIndex(w=>w.id===requestedCase);if(requestedIndex>=0)d.select(requestedIndex);$('#loading').classList.add('done');updatePause();window.worldCrafter={state:()=>d.state(),select:i=>d.select(i),view:v=>d.setView(v),overview:v=>d.setOverview(v),pause:v=>{d.setPaused(v);updatePause();},worlds:discWorlds.map(w=>w.id)};}).catch(error=>{console.error('Diorama initialization failed',error);$('#loading').classList.add('done');$('#webgl-fallback').hidden=false;});
+createDiorama({canvas,worlds:discWorlds,onActive:setActive,onProgress:p=>{$('#loading-label').textContent=`Preparing the worlds · ${Math.round(p*100)}%`;}}).then(d=>{diorama=d;const requestedIndex=discWorlds.findIndex(w=>w.id===requestedCase);if(requestedIndex>=0)d.select(requestedIndex);$('#loading').classList.add('done');updatePause();window.gameCrafter={state:()=>d.state(),select:i=>d.select(i),view:v=>d.setView(v),overview:v=>d.setOverview(v),pause:v=>{d.setPaused(v);updatePause();},worlds:discWorlds.map(w=>w.id)};}).catch(error=>{console.error('Diorama initialization failed',error);$('#loading').classList.add('done');$('#webgl-fallback').hidden=false;});
 function updatePause(){const paused=diorama?.paused;$('#spin-toggle').textContent=paused?'▶':'Ⅱ';$('#spin-toggle').setAttribute('aria-label',paused?'Resume rotation':'Pause rotation');}
 $('#spin-toggle').addEventListener('click',()=>{if(diorama)diorama.setPaused(!diorama.paused);updatePause();});$('#reset-view').addEventListener('click',()=>diorama?.reset());
 $('#view-toggle').addEventListener('click',()=>{if(!diorama)return;diorama.setOverview(!diorama.overview);$('#view-toggle').textContent=diorama.overview?'Focus view':'Overview';$('#view-toggle').setAttribute('aria-label',diorama.overview?'Return to the close perspective view':`Show all ${discWorlds.length} sectors from above`);});
 worldSelector.addEventListener('keydown',e=>{if(!['ArrowLeft','ArrowRight','Home','End'].includes(e.key))return;e.preventDefault();let i=[...worldSelector.children].indexOf(document.activeElement);i=e.key==='Home'?0:e.key==='End'?discWorlds.length-1:(i+(e.key==='ArrowRight'?1:-1)+discWorlds.length)%discWorlds.length;worldSelector.children[i].focus();diorama?.select(i);});
 
 const details=[
- ['A shared world specification','The design agent turns intent into a GameSpec: player and Boss roles, a visual direction, a combat space, and a connected exploration map. Map planning defines destinations, branching routes, scale, and collision clearances before scene construction.'],
- ['Assets with a purpose','The asset agent decides what requires a distinctive generated mesh and what should be built parametrically. gpt-image-2 develops visual references; Tripo generates characters and selected buildings or plants. Source receipts preserve provenance and support interrupted jobs.'],
- ['Geometry and characters','Blender prepares meshes, checks unwanted surface bridges and anatomy, preserves or creates rigs, and validates deformation. The scene agent constructs terrain, roads, architecture, and a corresponding structural whitebox.'],
- ['A coherent playable world','Unreal Engine integrates the scene and characters, retargets motion, and handles lighting, PBR materials, collision, exploration, and Boss combat. The same game supports first-person, third-person, and isometric cameras.'],
- ['Review the actual result','Visual review examines current scene renders. Playtests check movement, facing, contact, and camera behavior. Capture checks validate frame pairing, projection, depth, labels, and the structural whitebox. Failures return to the responsible stage for a bounded repair and recheck.']
+  [
+    "A shared specification and artifact graph",
+    "A design agent converts the request into a GameSpec that defines visual style, environment structure, characters, gameplay, cameras, and acceptance criteria. The orchestrator resolves artifact dependencies, selects tools, dispatches specialist roles, and tracks outputs so affected stages can be resumed or recomputed."
+  ],
+  [
+    "Appearance and executable structure",
+    "Environment agents plan art direction, metric layouts, branching routes, and destinations, then construct detailed geometry and a structural proxy. Character production combines mesh generation, cleanup, rigging, skinning, animation retargeting, and deformation checks. Assets are prepared for gameplay as well as rendering."
+  ],
+  [
+    "Multiple gameplay modes in one runtime",
+    "Unreal Engine brings geometry, materials, collision, characters, and animations into one coordinate system. Exploration and boss combat operate over the same world, with movement, damage, death, and reset logic. First-person, third-person, and 2.5D cameras observe that shared runtime."
+  ],
+  [
+    "Validate, localize, and repair",
+    "Visual review checks composition, style, anatomy, and deformation. Executable checks test routes, collisions, combat, reset behavior, and cameras. A failure is assigned to its responsible artifact; the affected stage and dependent outputs are repaired and rechecked. Validated worlds support capture with modalities aligned to the same simulation state and camera."
+  ]
 ];
 function setStep(i){[...$('#workflow-steps').querySelectorAll('button')].forEach((b,j)=>{b.classList.toggle('active',i===j);b.setAttribute('aria-pressed',String(i===j));});$('#step-detail').innerHTML=`<h3>${details[i][0]}</h3><p>${details[i][1]}</p>`;}
 $('#workflow-steps').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>setStep(Number(b.dataset.step))));setStep(0);

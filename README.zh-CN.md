@@ -1,6 +1,6 @@
 # GameCrafter 项目主页
 
-**GameCrafter: A World-Centric Agentic Framework for Scalable Multi-Gameplay Game World Generation**
+**GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation**
 
 [English](README.md)
 
@@ -24,7 +24,7 @@ Windows 也可以运行 `python serve.py`。浏览器打开 `http://127.0.0.1:87
 - 结果区保留八个案例，包括此前的修道院与蒸汽工厂。
 - 展示各案例已有的探索、Boss 战、三个视角与五种视觉输出。
 - 可旋转缩放的场景模型，以及真实 Unreal Engine 截图和视频。
-- 方法图和此前归档的中英双语 v1.0 框架源代码匿名审稿副本。
+- 论文摘要、四阶段方法图及可切换的阶段介绍。
 
 首页圆盘是用于展示的代表性 Web 微缩景观，不是完整 UE 关卡导出。结果截图和视频来自实际 UE 录制。同组的五种模态使用相同帧与相机；不同视角的独立录制不宣称同步。网页深度图和语义图是展示预览，不能代替原始科学数据。
 
@@ -36,8 +36,8 @@ Windows 也可以运行 `python serve.py`。浏览器打开 `http://127.0.0.1:87
 
 原始游戏项目与生产记录单独保留。素材来源与许可见 [ATTRIBUTION.md](ATTRIBUTION.md)，历史录制颜色说明见 [CAPTURE_NOTES.md](CAPTURE_NOTES.md)。依赖库许可不自动覆盖生成或用户提供的媒体资产。
 
-## 匿名审稿分发
+## 展示范围
 
-页面资产与链接均使用相对路径，可在匿名仓库路径下访问。页面不包含作者栏、机构链接、分析追踪、外部字体或 API 凭据；公开方法图的文档元数据已清理。分发范围见 [ANONYMOUS_REVIEW.md](ANONYMOUS_REVIEW.md)。
+本仓库用于展示方法和录制结果，不分发生产框架、源码压缩包或匿名代码副本。标题与四个方法阶段均按当前论文对齐；完整摘要默认折叠，保持页面以视觉展示为主。
 
-源码下载是归档 v1.0 的审稿副本，不将后续案例重新标记为新版测量。使用时需要配置自己的兼容网关地址和密钥。仓库所有者、提交历史及托管域名跳转属于平台信息，需要由匿名仓库服务隐藏；仅复制网页文件不会自动隐藏这些信息。
+页面不包含作者栏、个人链接、分析追踪、外部字体或 API 凭据，展示资源均使用相对路径。第三方许可保留。原始游戏项目、框架源代码及生产记录仍单独保存。

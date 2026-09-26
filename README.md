@@ -1,6 +1,6 @@
 # GameCrafter project page
 
-**GameCrafter: A World-Centric Agentic Framework for Scalable Multi-Gameplay Game World Generation**
+**GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation**
 
 [中文说明](README.zh-CN.md)
 
@@ -24,7 +24,7 @@ The site has no build step and needs no API keys or external asset server. Three
 - Eight result cases, including the archived Amber Cloister and Ironwake Foundry.
 - Exploration and Boss combat, three camera perspectives, and five visual representations where available in the recorded case.
 - Orbitable authored-map previews and actual Unreal Engine images and videos.
-- A method figure and an anonymous review copy of the archived bilingual framework source v1.0.
+- The manuscript abstract, four-stage method figure and interactive stage descriptions.
 
 The opening disc is a representative web composition, not a full Unreal level export. Result images and videos come from the recorded UE cases. The five modality images within each paired set share a frame and camera; separate camera recordings are not claimed to be simultaneous. Browser depth and semantic images are display previews, not raw scientific arrays.
 
@@ -50,10 +50,10 @@ The site contains approximately 530 MiB of display assets. Large map models load
 
 ## Attribution
 
-See [ATTRIBUTION.md](ATTRIBUTION.md) and [CAPTURE_NOTES.md](CAPTURE_NOTES.md). Three.js retains its MIT license and Draco retains its bundled license. Generated and user-supplied media retain their source/provider rights; these assets are not automatically relicensed under the dependency licenses. The archived framework source has its own documentation and terms.
+See [ATTRIBUTION.md](ATTRIBUTION.md) and [CAPTURE_NOTES.md](CAPTURE_NOTES.md). Three.js retains its MIT license and Draco retains its bundled license. Generated and user-supplied media retain their source/provider rights; these assets are not automatically relicensed under the dependency licenses.
 
-## Anonymous review distribution
+## Showcase scope
 
-Page assets and links are relative and can be served under an anonymous repository URL. The site contains no author block, institution links, analytics, externally hosted fonts, or API credentials. Public figure metadata has been minimized. See [ANONYMOUS_REVIEW.md](ANONYMOUS_REVIEW.md) for the distribution scope and configuration notes.
+This repository presents the method and recorded results. It does not distribute the production framework, source archives, or an anonymous code package. The title and four method stages follow the current manuscript; the full abstract is available in a collapsible panel so the page remains focused on visual results.
 
-The source download is the archived v1.0 review copy, not a claim that later case results were measured under a new release. Configure your own compatible gateway host and key before using it. Repository ownership, commit history, and hosting redirects are platform metadata and must be hidden by the anonymous repository service; copying page files does not hide those automatically.
+The page contains no author block, personal links, analytics, external fonts, or API credentials. All display resources use relative URLs. Third-party licenses remain intact. Original game projects, framework releases, and production receipts are maintained separately.

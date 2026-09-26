@@ -36,10 +36,6 @@ All result images and videos are derived from actual project captures, resized o
 
 Sakura's two main gameplay videos and archived camera thumbnails include a verified correction of one redundant sRGB encoding in the historical capture. See `CAPTURE_NOTES.md` for the correction and validation; timing and scene content are unchanged.
 
-## Framework source
-
-`assets/gamecrafter-framework-v1.0-anonymous.zip` is an anonymous review copy of the archived bilingual v1.0 release. Gateway host and credential-variable names are neutralized; this packaging revision does not update historical production claims. Its own documentation and licensing apply to that source archive. This project-page folder supplies presentation assets and is separate from the game-generation runtime.
-
 New benchmark result videos are byte-identical copies of their accepted RGB exports. Their five aligned images use native frame 120 from one third-person combat sequence; independent camera thumbnails use frame 90. No Sakura transfer correction was applied to the new results. Source hashes and transformations are retained in the separate private production archive.
 
 The miniature viewer adds OrbitControls and DRACOLoader from Three.js 0.180.0 (MIT), with its bundled Draco decoder (Apache 2.0). See `vendor/three/examples/jsm/libs/draco/LICENSE`.

@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GameCrafter · Agentic Game World Generation</title>
-  <meta name="description" content="GameCrafter: A World-Centric Agentic Framework for Scalable Multi-Gameplay Game World Generation. Explore diverse worlds, two gameplay modes, three perspectives, and five aligned outputs.">
+  <title>GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation</title>
+  <meta name="description" content="GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation. Explore diverse worlds, two gameplay modes, three perspectives, and five aligned outputs.">
   <meta name="theme-color" content="#f6f4ef">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/style.css?v=paper-1">
   <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 </head>
 <body>
-<header class="site-nav"><a href="#" class="wordmark"><span class="mark">G</span> GameCrafter</a><nav aria-label="Main navigation"><a href="#method">Method</a><a href="#results">Results</a><a href="assets/gamecrafter-framework-v1.0-anonymous.zip" download class="source-link">Code <span>↗</span></a></nav></header>
+<header class="site-nav"><a href="#" class="wordmark"><span class="mark">G</span> GameCrafter</a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#results">Results</a></nav></header>
 <main>
 <section class="hero" aria-labelledby="title">
-  <div class="hero-heading"><div class="eyebrow">From imagination to interaction</div><h1 id="title">Game<span>Crafter</span></h1><p class="paper-title">A World-Centric Agentic Framework for Scalable<br class="desktop-break"> Multi-Gameplay Game World Generation</p></div>
+  <div class="hero-heading"><div class="eyebrow">From imagination to interaction</div><h1 id="title">Game<span>Crafter</span></h1><p class="paper-title">An Agentic Framework for<br class="desktop-break"> Multi-Gameplay Game World Generation</p></div>
   <div class="world-stage" id="world-stage" role="region" aria-label="Interactive 3D showcase of six miniature game worlds">
     <canvas id="world-canvas" aria-label="Rotating six-part diorama. Drag to rotate, or select a world below."></canvas>
     <div id="loading" class="loading"><span class="loading-ring"></span><span id="loading-label">Building a world of worlds</span></div>
@@ -27,41 +27,40 @@
   <a href="#results" class="scroll-cue">See the playable results <span>↓</span></a>
 </section>
 
-<section class="intro section" id="overview"><div class="section-label">The idea</div><div class="intro-grid"><h2>A world you can<br><em>actually play.</em></h2><div><p>GameCrafter turns a prompt or reference images into an editable game world. A coordinated team of design, production, and review agents brings specialized creative software into a single workflow.</p><p>Agents plan the map, allocate assets, prepare characters, and iterate on visual and gameplay evidence. The result supports exploration and Boss combat, three camera perspectives, and five aligned visual outputs.</p></div></div>
+<section class="intro section" id="overview"><div class="section-label">The idea</div><div class="intro-grid"><h2>A world you can<br><em>actually play.</em></h2><div><p>GameCrafter turns high-level instructions into coherent 3D game worlds where exploration and boss combat share the same executable environment. Specialized agents coordinate scene construction, character creation, animation, and gameplay across generative models, Blender, and Unreal Engine.</p><p>Four stages connect specification-guided orchestration, structure-aware asset synthesis, multi-gameplay world realization, and closed-loop quality control. The resulting worlds support three camera views and synchronized multimodal observations.</p></div></div>
 <figure class="teaser-figure" id="teaser-figure">
- <a class="teaser-figure-open" href="assets/figures/worldcrafter-teaser.png?v=neon-review-1" target="_blank" rel="noopener" aria-label="Open the full-resolution GameCrafter cyberpunk teaser">
-  <img src="assets/figures/worldcrafter-teaser.webp?v=neon-review-1" width="2240" height="1160" loading="lazy" decoding="async" alt="Six-world miniature overview with Neon Switchyard facing forward. Actual Unreal Engine captures show exploration and Boss combat, first-person, third-person and 2.5D views, and aligned skeleton, whitebox, depth and semantic outputs.">
+ <a class="teaser-figure-open" href="assets/figures/gamecrafter-teaser.png?v=neon-review-1" target="_blank" rel="noopener" aria-label="Open the full-resolution GameCrafter cyberpunk teaser">
+  <img src="assets/figures/gamecrafter-teaser.webp?v=neon-review-1" width="2240" height="1160" loading="lazy" decoding="async" alt="Six-world miniature overview with Neon Switchyard facing forward. Actual Unreal Engine captures show exploration and Boss combat, first-person, third-person and 2.5D views, and aligned skeleton, whitebox, depth and semantic outputs.">
  </a>
- <figcaption><p><strong>Many worlds. Playable from every perspective.</strong> Neon Switchyard demonstrates two gameplay modes, three camera views, and aligned multimodal observations. The central disc is a representative 3D overview.</p><a href="assets/figures/worldcrafter-teaser.png?v=neon-review-1" target="_blank" rel="noopener">Full-resolution figure <span aria-hidden="true">↗</span></a></figcaption>
+ <figcaption><p><strong>Many worlds. Playable from every perspective.</strong> Neon Switchyard demonstrates two gameplay modes, three camera views, and aligned multimodal observations. The central disc is a representative 3D overview.</p><a href="assets/figures/gamecrafter-teaser.png?v=neon-review-1" target="_blank" rel="noopener">Full-resolution figure <span aria-hidden="true">↗</span></a></figcaption>
  <nav class="teaser-case-links" aria-label="Explore the featured worlds"><a href="?scene=sakura_courtyard#results">Japanese garden</a><a href="?scene=neon_switchyard#results">Neon cyberpunk</a><a href="?scene=snowbound_outpost#results">Snowbound outpost</a><a href="?scene=desert_caravanserai#results">Desert caravanserai</a></nav>
 </figure>
-<div class="capability-line"><div><strong>2</strong><span>Gameplay modes</span></div><div><strong>3</strong><span>Camera perspectives</span></div><div><strong>5</strong><span>Aligned outputs</span></div><div class="last-capability"><span>Text or references</span><span class="flow-symbol">→</span><span>Playable worlds</span></div></div></section>
+<div class="capability-line"><div><strong>2</strong><span>Gameplay modes</span></div><div><strong>3</strong><span>Camera perspectives</span></div><div><strong>5</strong><span>Aligned outputs</span></div><div class="last-capability"><span>Text or references</span><span class="flow-symbol">→</span><span>Playable worlds</span></div></div>
+<details class="paper-abstract" id="abstract"><summary><span>Abstract</span><span class="abstract-prompt">Read the full abstract <span aria-hidden="true">＋</span></span></summary><div class="abstract-copy"><p>Recent advances in generative models and agentic workflows are making it increasingly feasible to automate game creation. These workflows offer a path from high-level user intent to playable worlds. However, existing systems largely focus on isolated assets, scene construction, or games centered on a single gameplay pattern, leaving coherent multi-gameplay 3D world generation underexplored. Generating such worlds requires coordinating scene construction, character creation, gameplay implementation and different software tools. To this end, we present GameCrafter, an agentic framework for scalable multi-gameplay game world generation. The long and interdependent production process makes consistent coordination across specialized agents and tools particularly challenging; GameCrafter addresses this with <strong>Specification-Guided Orchestration</strong> under shared production requirements. Moreover, visual plausibility alone does not guarantee gameplay readiness, motivating <strong>Structure-Aware Asset Synthesis</strong> that jointly models appearance and executable structure for environments and characters. These assets are then grounded in a shared executable runtime through <strong>Multi-Gameplay World Realization</strong>, allowing them to coexist consistently within the same world. Since errors can accumulate across stages and only become apparent after runtime integration, GameCrafter further employs <strong>Closed-Loop Quality Control</strong>, combining visual inspection, playtesting, and iterative repair. Beyond playable worlds, GameCrafter also produces synchronized multi-view, multimodal data aligned within the same simulation. Experiments demonstrate strong performance in visual quality, gameplay fidelity, and overall playability compared with existing game-generation approaches.</p></div></details></section>
 
-<section class="method-section section" id="method"><div class="section-label">The framework</div><div class="section-heading"><h2>Specialists create.<br><em>Agents coordinate.</em></h2><p>Each tool does the work it is built for.<br>Shared specifications keep the world coherent.</p></div>
+<section class="method-section section" id="method"><div class="section-label">The framework</div><div class="section-heading"><h2>Specialists create.<br><em>Agents coordinate.</em></h2><p>Four stages, from user intent to a verified game world.<br>Shared specifications connect agents and software.</p></div>
 
 <figure class="method-figure" id="method-figure">
  <button class="method-figure-open" id="method-figure-open" type="button" aria-haspopup="dialog" aria-controls="method-dialog" aria-label="Enlarge the GameCrafter method figure">
-  <img src="assets/figures/worldcrafter-method.webp" width="2560" height="1440" loading="lazy" decoding="async" alt="GameCrafter framework: specification-guided orchestration; environment and character synthesis; multi-gameplay realization in Unreal Engine; closed-loop quality control; and playable worlds with three cameras and five aligned modalities.">
+  <img src="assets/figures/gamecrafter-method.webp" width="2560" height="1440" loading="lazy" decoding="async" alt="GameCrafter framework: Specification-Guided Orchestration, Structure-Aware Asset Synthesis, Multi-Gameplay World Realization, and Closed-Loop Quality Control, with playable worlds and aligned multimodal observations as outputs.">
   <span class="method-enlarge-hint" aria-hidden="true">View full figure <span>↗</span></span>
  </button>
- <figcaption><p><strong>The complete GameCrafter framework.</strong> Specialist roles share specifications and artifacts, coordinate Blender and Unreal Engine, and repair failures through visual and executable checks.</p><a href="assets/figures/worldcrafter-method.pdf?v=anonymous-1" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a></figcaption>
+ <figcaption><p><strong>Four stages connect design, production, and validation.</strong> A shared specification and artifact graph guide asset synthesis, runtime integration, and targeted repair.</p><a href="assets/figures/gamecrafter-method.pdf?v=paper-1" target="_blank" rel="noopener">Open PDF <span aria-hidden="true">↗</span></a></figcaption>
 </figure>
 
 <div class="workflow">
  <div class="prompt-box"><span class="tiny-label">Prompt + optional references</span><p>“Create a Japanese garden with cherry blossoms, branching paths, and a guardian Boss.”</p><span class="prompt-arrow">↘</span></div>
- <div class="agent-line"><span class="agent-dot"></span><strong>Orchestrating agent</strong><span>Shared GameSpec · artifact contracts · resumable stages</span></div>
+ <div class="agent-line"><span class="agent-dot"></span><strong>Shared GameSpec</strong><span>Production requirements · artifact graph · specialized agents</span></div>
  <div class="workflow-steps" id="workflow-steps">
-  <button data-step="0" class="workflow-step active"><span class="step-number">01</span><span class="step-title">Design the world</span><span class="step-role">Design + map agents</span><span class="step-tools">Layout · routes · art direction</span></button>
-  <span class="workflow-arrow">→</span>
-  <button data-step="1" class="workflow-step"><span class="step-number">02</span><span class="step-title">Create the assets</span><span class="step-role">Asset + character agents</span><span class="step-tools">gpt-image-2 · Tripo</span></button>
-  <span class="workflow-arrow">→</span>
-  <button data-step="2" class="workflow-step"><span class="step-number">03</span><span class="step-title">Construct the world</span><span class="step-role">Scene + rigging agents</span><span class="step-tools">Blender</span></button>
-  <span class="workflow-arrow">→</span>
-  <button data-step="3" class="workflow-step"><span class="step-number">04</span><span class="step-title">Make it playable</span><span class="step-role">Integration + gameplay agents</span><span class="step-tools">Unreal Engine</span></button>
-  <span class="workflow-arrow">→</span>
-  <button data-step="4" class="workflow-step"><span class="step-number">05</span><span class="step-title">Review & refine</span><span class="step-role">Visual + validation agents</span><span class="step-tools">Playtests · camera & pair checks</span></button>
+  <button data-step="0" class="workflow-step active"><span class="step-number">01</span><span class="step-title">Specification-Guided Orchestration</span><span class="step-role">Design + orchestration agents</span><span class="step-tools">GameSpec · artifact dependencies</span></button>
+  <span class="workflow-arrow" aria-hidden="true">→</span>
+  <button data-step="1" class="workflow-step"><span class="step-number">02</span><span class="step-title">Structure-Aware Asset Synthesis</span><span class="step-role">Environment + character agents</span><span class="step-tools">Generative models · Blender · retargeting</span></button>
+  <span class="workflow-arrow" aria-hidden="true">→</span>
+  <button data-step="2" class="workflow-step"><span class="step-number">03</span><span class="step-title">Multi-Gameplay World Realization</span><span class="step-role">Integration + gameplay agents</span><span class="step-tools">Unreal Engine · gameplay · cameras</span></button>
+  <span class="workflow-arrow" aria-hidden="true">→</span>
+  <button data-step="3" class="workflow-step"><span class="step-number">04</span><span class="step-title">Closed-Loop Quality Control</span><span class="step-role">Visual review + validation agents</span><span class="step-tools">Playtests · targeted repair · aligned capture</span></button>
  </div>
- <div class="repair-loop"><span>↶</span> Evidence-driven repairs return to the responsible stage <span>↵</span></div>
+ <div class="repair-loop"><span>↶</span> Localize failure → Repair responsible artifact → Recompute affected stages → Revalidate <span>↵</span></div>
  <div id="step-detail" class="step-detail" aria-live="polite"></div>
 </div></section>
 
@@ -79,15 +78,14 @@
  <p class="modality-note">RGB, metric depth, skeletons, semantic labels, and structural whitebox share the same camera and simulation time. Whitebox uses simplified scene geometry and articulated capsules. Depth and semantic images here are display previews.</p>
 </section>
 
-<section class="closing section"><div class="section-label">Built to evolve</div><div class="closing-grid"><h2>A repeatable process.<br><em>New worlds every time.</em></h2><div><p>The workflow stays consistent while the content changes. New prompts create new assets; reference images can guide a scene or replace a character. A local repair can resume from the affected stage.</p><a class="download-link" href="assets/gamecrafter-framework-v1.0-anonymous.zip" download>Framework source v1.0 · anonymous copy <span>↗</span></a></div></div></section>
 </main>
-<footer><span class="wordmark">GameCrafter</span><p>A World-Centric Agentic Framework for Scalable Multi-Gameplay Game World Generation</p><a href="#title">Back to top ↑</a></footer>
+<footer><span class="wordmark">GameCrafter</span><p>An Agentic Framework for Multi-Gameplay Game World Generation</p><a href="#title">Back to top ↑</a></footer>
 <dialog id="image-dialog"><button id="close-dialog" aria-label="Close enlarged image">×</button><img id="dialog-image" alt=""><p id="dialog-caption"></p></dialog>
-<script type="module" src="src/app.js"></script>
+<script type="module" src="src/app.js?v=paper-1"></script>
 
 <dialog id="method-dialog" aria-labelledby="method-dialog-title">
- <div class="method-viewer-toolbar"><h2 id="method-dialog-title">GameCrafter framework</h2><div class="method-viewer-controls"><button id="method-zoom-out" type="button" aria-label="Zoom out">−</button><output id="method-zoom-level" aria-live="polite">100%</output><button id="method-zoom-in" type="button" aria-label="Zoom in">+</button><button id="method-fit" type="button">Fit</button><a href="assets/figures/worldcrafter-method.pdf?v=anonymous-1" target="_blank" rel="noopener">PDF ↗</a><button id="method-close" type="button" aria-label="Close method figure" autofocus>×</button></div></div>
- <div id="method-zoom-surface" tabindex="0" aria-label="Method figure. Use plus and minus to zoom, arrow keys or drag to pan, and Home to fit."><img id="method-full-image" src="assets/figures/worldcrafter-method-full.png" width="3840" height="2160" loading="lazy" alt="Complete GameCrafter method figure"></div>
+ <div class="method-viewer-toolbar"><h2 id="method-dialog-title">GameCrafter framework</h2><div class="method-viewer-controls"><button id="method-zoom-out" type="button" aria-label="Zoom out">−</button><output id="method-zoom-level" aria-live="polite">100%</output><button id="method-zoom-in" type="button" aria-label="Zoom in">+</button><button id="method-fit" type="button">Fit</button><a href="assets/figures/gamecrafter-method.pdf?v=paper-1" target="_blank" rel="noopener">PDF ↗</a><button id="method-close" type="button" aria-label="Close method figure" autofocus>×</button></div></div>
+ <div id="method-zoom-surface" tabindex="0" aria-label="Method figure. Use plus and minus to zoom, arrow keys or drag to pan, and Home to fit."><img id="method-full-image" src="assets/figures/gamecrafter-method-full.png" width="3840" height="2160" loading="lazy" alt="Complete GameCrafter method figure"></div>
  <p class="method-viewer-help">Zoom to read details · Drag to pan · Esc to close</p>
 </dialog>
 <script type="module" src="src/method-figure.js"></script>
