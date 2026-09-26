@@ -7,7 +7,6 @@
   <meta name="theme-color" content="#f6f4ef">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="src/style.css?v=paper-1">
-  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
 </head>
 <body>
 <header class="site-nav"><a href="#" class="wordmark"><span class="mark">G</span> GameCrafter</a><nav aria-label="Main navigation"><a href="#overview">Overview</a><a href="#method">Method</a><a href="#results">Results</a></nav></header>
@@ -81,13 +80,12 @@
 </main>
 <footer><span class="wordmark">GameCrafter</span><p>An Agentic Framework for Multi-Gameplay Game World Generation</p><a href="#title">Back to top ↑</a></footer>
 <dialog id="image-dialog"><button id="close-dialog" aria-label="Close enlarged image">×</button><img id="dialog-image" alt=""><p id="dialog-caption"></p></dialog>
-<script type="module" src="src/app.js?v=paper-1"></script>
+<script defer src="src/site.bundle.js?v=sandbox-1"></script>
 
 <dialog id="method-dialog" aria-labelledby="method-dialog-title">
  <div class="method-viewer-toolbar"><h2 id="method-dialog-title">GameCrafter framework</h2><div class="method-viewer-controls"><button id="method-zoom-out" type="button" aria-label="Zoom out">−</button><output id="method-zoom-level" aria-live="polite">100%</output><button id="method-zoom-in" type="button" aria-label="Zoom in">+</button><button id="method-fit" type="button">Fit</button><a href="assets/figures/gamecrafter-method.pdf?v=paper-1" target="_blank" rel="noopener">PDF ↗</a><button id="method-close" type="button" aria-label="Close method figure" autofocus>×</button></div></div>
  <div id="method-zoom-surface" tabindex="0" aria-label="Method figure. Use plus and minus to zoom, arrow keys or drag to pan, and Home to fit."><img id="method-full-image" src="assets/figures/gamecrafter-method-full.png" width="3840" height="2160" loading="lazy" alt="Complete GameCrafter method figure"></div>
  <p class="method-viewer-help">Zoom to read details · Drag to pan · Esc to close</p>
 </dialog>
-<script type="module" src="src/method-figure.js"></script>
 
 </body></html>

@@ -11,3 +11,5 @@
 *.mp4 binary
 *.zip binary
 *.pdf binary
+assets/portable/*.js binary
+src/site.bundle.js -diff

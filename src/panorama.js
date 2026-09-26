@@ -1,12 +1,12 @@
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
-import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
+import {loadGltf,CompatibleDRACOLoader} from './asset-transport.js';
 import {OrbitControls} from 'three/addons/controls/OrbitControls.js';
 
 // One lazy renderer serves all result scenes. No frame loop runs off screen.
 export function createPanorama({canvas,poster,status,loadButton,resetButton}) {
  let renderer,scene,camera,controls,model,displayBounds,fitSize={width:50,height:50},selection,token=0,visible=false,disposed=false,loading=false;
- const draco=new DRACOLoader().setDecoderPath('vendor/three/examples/jsm/libs/draco/gltf/');draco.setWorkerLimit(2);
+ const draco=new CompatibleDRACOLoader().setDecoderPath('vendor/three/examples/jsm/libs/draco/gltf/');draco.setWorkerLimit(2);
  const loader=new GLTFLoader().setDRACOLoader(draco),center=new THREE.Vector3();
  function render(){if(renderer&&visible&&!disposed)renderer.render(scene,camera);}
  function init(){
@@ -36,7 +36,7 @@ export function createPanorama({canvas,poster,status,loadButton,resetButton}) {
  async function load(){
   if(!selection?.url||loading)return;const current=++token,requested=selection;loading=true;loadButton.hidden=true;status.textContent='Loading the authored scene…';
   try{
-   init();const g=await loader.loadAsync(requested.url);if(current!==token||disposed){release(g.scene);return;}
+   init();const g=await loadGltf(loader,requested.url);if(current!==token||disposed){release(g.scene);return;}
    clear();model=g.scene;model.traverse(o=>{if(o.isMesh){o.castShadow=true;o.receiveShadow=true;}});model.updateMatrixWorld(true);const box=new THREE.Box3().setFromObject(model),size=box.getSize(new THREE.Vector3()),c=box.getCenter(new THREE.Vector3());
    const scale=46/Math.max(size.x,size.z);model.scale.multiplyScalar(scale);model.position.sub(new THREE.Vector3(c.x,box.min.y,c.z).multiplyScalar(scale));scene.add(model);
    model.updateMatrixWorld(true);displayBounds=new THREE.Box3().setFromObject(model);displayBounds.getCenter(center);poster.hidden=true;canvas.hidden=false;resetButton.hidden=false;status.textContent='Drag to orbit · Scroll or pinch to zoom · Right-drag to pan';

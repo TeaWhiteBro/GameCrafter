@@ -1,10 +1,11 @@
 import {worlds,discWorlds} from './worlds.js';
+import media from './media.json';
 import {createPanorama} from './panorama.js';
 import {createDiorama} from './diorama.js';
 const $=s=>document.querySelector(s);
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;document.body.dataset.reducedMotion=reduced;
 const requestedCase=new URLSearchParams(location.search).get('scene');
-let diorama=null,resultCase=worlds.find(w=>w.id===requestedCase)||worlds[0],activity='exploration',media={};
+let diorama=null,resultCase=worlds.find(w=>w.id===requestedCase)||worlds[0],activity='exploration';
 const baseModalityNote=$('.modality-note').textContent;
 const worldSelector=$('#world-selector');
 const panorama=createPanorama({canvas:$('#panorama-canvas'),poster:$('#panorama-poster'),status:$('#panorama-status'),loadButton:$('#panorama-load'),resetButton:$('#panorama-reset')});
@@ -69,6 +70,6 @@ function renderResults(w){resultCase=w;const data=media[w.id]||{};document.query
 function renderCameras(){const data=media[resultCase.id]||{};const container=$('#camera-grid');container.replaceChildren();for(const [key,label]of[['first','First person'],['third','Third person'],['isometric','2.5D / Isometric']]){const session=`${activity}_${key}`,src=data.cameras?.[session]||data.sessions?.[session]?.poster||data.preview;if(src)container.append(imageFigure(src,label));}$('#activity-switch').querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.activity===activity));}
 function renderModalities(){const data=media[resultCase.id]||{},container=$('#modalities-grid');container.replaceChildren();for(const [key,label]of[['rgb','RGB'],['depth','Depth'],['skeleton','Skeleton'],['semantics','Semantics'],['whitebox','Whitebox']]){const src=(data.alignedByActivity?.[activity]||data.aligned)?.[key];if(src)container.append(imageFigure(src,label));}container.hidden=!container.children.length;}
 $('#activity-switch').querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>{activity=b.dataset.activity;renderCameras();renderModalities();}));
-fetch('src/media.json').then(r=>{if(!r.ok)throw new Error('Media manifest not found');return r.json();}).then(m=>{media=m;renderResults(resultCase);}).catch(e=>{console.error(e);$('#result-prompt').textContent='The media manifest could not be loaded. Start this page with the included local server.';});
+renderResults(resultCase);
 const videoObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{const video=entry.target;if(!entry.isIntersecting)video.pause();}),{threshold:.15});document.querySelectorAll('video').forEach(v=>videoObserver.observe(v));
 document.addEventListener('visibilitychange',()=>{if(document.hidden)document.querySelectorAll('video').forEach(v=>v.pause());});

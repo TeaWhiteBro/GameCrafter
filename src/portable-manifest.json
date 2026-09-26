@@ -1,0 +1,232 @@
+{
+  "assets/images/texture_asphalt.jpg": {
+    "script": "assets/portable/edbda1cf99b35f4e1b840e62.js",
+    "bytes": 192831,
+    "sha256": "e96e3e2c027c18f5279dab1a6be8dfdd5e77f04b911998a91d2255ec0c23e443"
+  },
+  "assets/images/texture_grass.jpg": {
+    "script": "assets/portable/f7be4037de56542ad3ba45d2.js",
+    "bytes": 402362,
+    "sha256": "60c3ad53c3bbd8c6c509e21d364902843c9a0bd660f14e371c04db8f281ab79e"
+  },
+  "assets/images/texture_sand.jpg": {
+    "script": "assets/portable/fb1df2dca951200066b83193.js",
+    "bytes": 314643,
+    "sha256": "5414a4046da1cb4e548e832b2383c7414aafc53bc93dac33a5c51f36e71c49e2"
+  },
+  "assets/images/texture_snow.jpg": {
+    "script": "assets/portable/92e3afe5c5681d876686e500.js",
+    "bytes": 320542,
+    "sha256": "7fdfcbaf84d4c4839ce7827f50e5daedd3c0993cffc4cfe569df19fc23747541"
+  },
+  "assets/images/texture_stone.jpg": {
+    "script": "assets/portable/885b88691cd8dddc8b6af72e.js",
+    "bytes": 219907,
+    "sha256": "e3d5237b3760bbb4013095eb4427e312cfc5ce89d6a8c5d05636a05d728fe895"
+  },
+  "assets/models/abyssal_coral_outcrop.glb": {
+    "script": "assets/portable/a635865cacded5ae158291fe.js",
+    "bytes": 1473940,
+    "sha256": "b774410a9ae6e1221e2d35ce8b91ada10c990a381382dc5436109440ea4ad684"
+  },
+  "assets/models/abyssal_pressure_relay.glb": {
+    "script": "assets/portable/365120d03a5c460641a21a61.js",
+    "bytes": 1339076,
+    "sha256": "04a14c2bc223e95bc6a932f4f3f74b8e9c82f8f6788e4a60da12bff96a865462"
+  },
+  "assets/models/abyssal_subsea_survey_submersible.glb": {
+    "script": "assets/portable/d660c16e3b9c34af4377ae24.js",
+    "bytes": 1316540,
+    "sha256": "2b6fc1dfde69654748f97aa5970dbdfdb12c866369ce39df843a8e3c53beeee2"
+  },
+  "assets/models/alpine_ranger_lodge.glb": {
+    "script": "assets/portable/7ad69a50c1471b2b14717232.js",
+    "bytes": 1757572,
+    "sha256": "e6411c54cc91f04252d745ce31b50786e590215b46ab3eb13e04fd5510215671"
+  },
+  "assets/models/alpine_watch_lookout.glb": {
+    "script": "assets/portable/dbe50aa99285f7084711fa3e.js",
+    "bytes": 2062016,
+    "sha256": "767f5d556f6fb55087e5e0e6812263da3d7c9d3afcdb77052c965df1477f745f"
+  },
+  "assets/models/amber_cloister_boss.glb": {
+    "script": "assets/portable/0fd152cc2303c8cf6b62be60.js",
+    "bytes": 1088700,
+    "sha256": "00935493b797b7def5ad1c7a8ca5b8c948a534e75e1c4d17cb9d8d0963921f65"
+  },
+  "assets/models/amber_cloister_panorama.glb": {
+    "script": "assets/portable/34de798be1ea8e4c29c7336a.js",
+    "bytes": 21265940,
+    "sha256": "4a2bed9f428e10fd4a644c84af74dad72fa86c55e9322b342b48826741b55702"
+  },
+  "assets/models/amber_cloister_player.glb": {
+    "script": "assets/portable/f314c4afaa78f7f501875eb6.js",
+    "bytes": 1370000,
+    "sha256": "7c3954cd39a5e001856d71906347001a04c655a8e44b3cc23a14360adcbe8ac4"
+  },
+  "assets/models/caravan_merchant_stall.glb": {
+    "script": "assets/portable/466ee5c636649d39bdbeba20.js",
+    "bytes": 1661340,
+    "sha256": "a047d2b554f810c2933b919edc366e105b77172a9b79cecc21ed795bba9658e2"
+  },
+  "assets/models/cherry_full_bloom.glb": {
+    "script": "assets/portable/40d93685cd13f6ac65afc499.js",
+    "bytes": 17284024,
+    "sha256": "1fbdb16204d94d49817399c3edc196a1ee52d720ec06d59f1629a3e85ad6d74e"
+  },
+  "assets/models/cyberpunk_corner_shophouse.glb": {
+    "script": "assets/portable/b5e5fda4ed75e09160b4d51f.js",
+    "bytes": 1478356,
+    "sha256": "07e374db051b54ec011a5736fe8ed4a51bdfb6bf5379c3368897aceb80070b4e"
+  },
+  "assets/models/cyberpunk_hover_interceptor.glb": {
+    "script": "assets/portable/ce126ce4fdcdc1e7959a02d0.js",
+    "bytes": 1098492,
+    "sha256": "407e8afbae5dff296c1fc89a3611d74d9f2ff19cba44101ebfd83d5e9392e741"
+  },
+  "assets/models/desert_caravanserai_boss.glb": {
+    "script": "assets/portable/05ac9c2fbb4c76193df03439.js",
+    "bytes": 1548060,
+    "sha256": "b833c537769430a6d3e267c73adb1b4be47b450d36f3382a2882360d84664087"
+  },
+  "assets/models/desert_caravanserai_panorama.glb": {
+    "script": "assets/portable/b46cbd358e1f7cefe9f5b5d7.js",
+    "bytes": 14114612,
+    "sha256": "fac3de5d235be67d23c92e67c0f8d53efd0136d9bfb3c6e6ce263f1e0dc04a6e"
+  },
+  "assets/models/desert_caravanserai_player.glb": {
+    "script": "assets/portable/539ea47317c9b905c29b8cf7.js",
+    "bytes": 1407520,
+    "sha256": "435bf19a2b6a61310a20d52aabb60a2535e0ccdd255435b10b4f5cefe07443f7"
+  },
+  "assets/models/mature_date_palm.glb": {
+    "script": "assets/portable/d09d35a9bdc8890181664dd5.js",
+    "bytes": 2697112,
+    "sha256": "283d660c83a33b60a52a58a1a8717c6e420a18d6fca43baac5369f5f0afc9387"
+  },
+  "assets/models/mediterranean_courtyard_boss.glb": {
+    "script": "assets/portable/f1bc4867b77a51662e3ac975.js",
+    "bytes": 1507076,
+    "sha256": "f656946485579fcb8dfeb315b59e38aee720089532bddebd16f04309a5008d16"
+  },
+  "assets/models/mediterranean_courtyard_panorama.glb": {
+    "script": "assets/portable/36438ef7428595d3e73c5299.js",
+    "bytes": 29980560,
+    "sha256": "1e0ba2ea881af599ec933f8dfa964c85d70f0260a73d0b2b02c4f8bf53ff2a45"
+  },
+  "assets/models/mediterranean_courtyard_player.glb": {
+    "script": "assets/portable/d1a30403617936cc5d48327a.js",
+    "bytes": 1330684,
+    "sha256": "a2ae3b1da0407f8b31eb26bd2ac4526940acb3eb9578c3baeb72dd5b1fd7b41c"
+  },
+  "assets/models/neon_switchyard_boss.glb": {
+    "script": "assets/portable/f461b4856b98df5eb6ff3b3b.js",
+    "bytes": 1414992,
+    "sha256": "4c6f466f89832fb74d14be2b16348625f1308dac1fd13ccf0a9ab6fb5301dcfd"
+  },
+  "assets/models/neon_switchyard_panorama.glb": {
+    "script": "assets/portable/964a684c697c44610488891f.js",
+    "bytes": 19958320,
+    "sha256": "040e171c5a9441d2c514546f8877452f5c13aa445570bdf210b11023182ee4a0"
+  },
+  "assets/models/neon_switchyard_player.glb": {
+    "script": "assets/portable/f10b282bbbf404bc486f1249.js",
+    "bytes": 1230548,
+    "sha256": "94c8861a5620d03a83ff1b849f34e32aab57c6d58dad213e7b8eab63b94dd68c"
+  },
+  "assets/models/sakura_courtyard_boss.glb": {
+    "script": "assets/portable/33a9140855debb587b7ed44a.js",
+    "bytes": 1559444,
+    "sha256": "a99287c405de0ebfbac1616bb4af78f5844529bc83347997a0cfd5c0c2c9f982"
+  },
+  "assets/models/sakura_courtyard_panorama.glb": {
+    "script": "assets/portable/e9462a74f6f6c8912a277b59.js",
+    "bytes": 55865264,
+    "sha256": "839967d2ac4b37fcfabf80b49ec73dcc6838a02262eb017e3f1abc8773150b20"
+  },
+  "assets/models/sakura_courtyard_player.glb": {
+    "script": "assets/portable/0338886548e0db7053fb6ed9.js",
+    "bytes": 1370000,
+    "sha256": "7c3954cd39a5e001856d71906347001a04c655a8e44b3cc23a14360adcbe8ac4"
+  },
+  "assets/models/sandstone_caravan_house.glb": {
+    "script": "assets/portable/e2f06df41f7af99288a876df.js",
+    "bytes": 1837900,
+    "sha256": "284314bc7027ebf70f0ef105f1b19eaba5bb8a9509810a985919e7c922db2776"
+  },
+  "assets/models/snowbound_outpost_boss.glb": {
+    "script": "assets/portable/8d8eae97456a1512ad62fff8.js",
+    "bytes": 1571160,
+    "sha256": "6b774989c3a5dde44ffd86dcd83237102f775bae98704725238d333f2ab03b9c"
+  },
+  "assets/models/snowbound_outpost_panorama.glb": {
+    "script": "assets/portable/02688668ef7f4388fb47d6a4.js",
+    "bytes": 20890684,
+    "sha256": "9355a7450e6a0eb297860b7a6a55dfad81fe11e9f5ad3d48663388de68752f09"
+  },
+  "assets/models/snowbound_outpost_player.glb": {
+    "script": "assets/portable/eb69427e443235ff2baae690.js",
+    "bytes": 1355680,
+    "sha256": "b586840d5bfdea0787ecfa246b75d6049643d775142e18ff6907483fca9609a9"
+  },
+  "assets/models/snowy_alpine_spruce.glb": {
+    "script": "assets/portable/02a5bda3396d52d78737c5cb.js",
+    "bytes": 2652916,
+    "sha256": "e6d686d078fcc2706474f070fc99ec4f136ca3dd375d39686972a96aad486dca"
+  },
+  "assets/models/steampunk_foundry_panorama.glb": {
+    "script": "assets/portable/56810fb1abb201c7147164db.js",
+    "bytes": 9879948,
+    "sha256": "fb8d03c10a5c92bdbc9afc37410bbdcc7082e4e16a7d172bdc1e7c12834b9c25"
+  },
+  "assets/models/sunward_flowers.glb": {
+    "script": "assets/portable/63dac869b17d2e355ee6b007.js",
+    "bytes": 1128756,
+    "sha256": "ced501021ca588411302ff8666a0dcbcbe00013d3abb3fb8bc5f98ba954c4a9a"
+  },
+  "assets/models/sunward_fountain.glb": {
+    "script": "assets/portable/3a811917816810fd0764a506.js",
+    "bytes": 1067856,
+    "sha256": "194eebbec540e5e4ff37cab60a264439874ea9f627f9d21be1006cdb50223622"
+  },
+  "assets/models/sunward_olive.glb": {
+    "script": "assets/portable/73d46810b7ad7820f8bec65c.js",
+    "bytes": 1794644,
+    "sha256": "48f552a1cb99fa0faf373ab69d07448aade7361ec0de7990c5dd5d7f30cd0722"
+  },
+  "assets/models/underwater_habitat_boss.glb": {
+    "script": "assets/portable/471d775048b74be1eddb0506.js",
+    "bytes": 1499692,
+    "sha256": "5ef46c3cd2ce28fcb85247663470d294445394a32e1e1ffbcb0cccdcef76a277"
+  },
+  "assets/models/underwater_habitat_panorama.glb": {
+    "script": "assets/portable/ec73328759379a75e6b54bed.js",
+    "bytes": 13953944,
+    "sha256": "1101128d1bc63a0c169b3534895c5a8d2aa88170267fb1cf58b7a7f61b71230e"
+  },
+  "assets/models/underwater_habitat_player.glb": {
+    "script": "assets/portable/247d206df0c604bce524e8fa.js",
+    "bytes": 1254568,
+    "sha256": "7dfb848731586fd5d7ead11cd961cb99481d9da7f738eee37137976303a57dee"
+  },
+  "assets/models/vermilion_shrine_landmark.glb": {
+    "script": "assets/portable/429e63deb3933bf9cc90a62a.js",
+    "bytes": 1215964,
+    "sha256": "385880b120d860fec749ac2767341d3511ee2e2758e5a53954ad61306fed7126"
+  },
+  "vendor/three/examples/jsm/libs/draco/gltf/draco_decoder.js": {
+    "script": "assets/portable/92227940ca7df1e8612d8025.js",
+    "bytes": 512465,
+    "sha256": "8625489da79a805f4f2a7d511c3e52d8b4085608a9d2a4d5f4f9de5db0aea04f"
+  },
+  "vendor/three/examples/jsm/libs/draco/gltf/draco_decoder.wasm": {
+    "script": "assets/portable/1af0551db7d2225217f599ad.js",
+    "bytes": 192420,
+    "sha256": "a680d927bed9cb864ddbd63521868891af2bfbe755092761b4837487618df8ac"
+  },
+  "vendor/three/examples/jsm/libs/draco/gltf/draco_wasm_wrapper.js": {
+    "script": "assets/portable/dc5d853bd8ae7e725953bb6a.js",
+    "bytes": 58456,
+    "sha256": "8bb2952d2ba7d67e1414f8df819410cb0434a666be53f671fff75f68843d76f6"
+  }
+}

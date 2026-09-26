@@ -1,3 +1,4 @@
+import {loadGltf,loadTexture} from './asset-transport.js';
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { clone } from 'three/addons/utils/SkeletonUtils.js';
@@ -27,10 +28,10 @@ export async function createDiorama({canvas,worlds,onActive,onProgress}){
  const root=new THREE.Group();scene.add(root);
  const N=worlds.length,step=TAU/N,R=6.2,half=step/2-.006;
  const loader=new GLTFLoader();const textureLoader=new THREE.TextureLoader();const assetCache=new Map();const characters=[];const moving=[];const groups=[];const failures=[];
- const stoneMap=textureLoader.load('assets/images/texture_stone.jpg');stoneMap.colorSpace=THREE.SRGBColorSpace;stoneMap.wrapS=stoneMap.wrapT=THREE.RepeatWrapping;stoneMap.repeat.set(.48,.48);stoneMap.anisotropy=4;
+ const stoneMap=loadTexture(textureLoader,'assets/images/texture_stone.jpg',e=>{failures.push('texture_stone');console.warn(e);});stoneMap.colorSpace=THREE.SRGBColorSpace;stoneMap.wrapS=stoneMap.wrapT=THREE.RepeatWrapping;stoneMap.repeat.set(.48,.48);stoneMap.anisotropy=4;
  function masonry(color){const m=material(color,.89);m.map=stoneMap;return m;}
  let completed=0;
- async function loadModel(key){if(assetCache.has(key))return assetCache.get(key);const promise=loader.loadAsync(`assets/models/${key}.glb`).then(g=>g.scene).catch(e=>{failures.push(key);console.warn('Model unavailable',key,e);return null;});assetCache.set(key,promise);return promise;}
+ async function loadModel(key){if(assetCache.has(key))return assetCache.get(key);const promise=loadGltf(loader,`assets/models/${key}.glb`).then(g=>g.scene).catch(e=>{failures.push(key);console.warn('Model unavailable',key,e);return null;});assetCache.set(key,promise);return promise;}
  async function putAsset(parent,key,height,x,z,yaw=0,y=0,fit={}){
   const src=await loadModel(key);if(!src)return null;
   const ob=clone(src);ob.updateMatrixWorld(true);const bounds=new THREE.Box3().setFromObject(ob);const size=bounds.getSize(new THREE.Vector3());const center=bounds.getCenter(new THREE.Vector3());
@@ -83,7 +84,7 @@ export async function createDiorama({canvas,worlds,onActive,onProgress}){
   const body=new THREE.ExtrudeGeometry(s,{depth:.66,bevelEnabled:true,bevelSegments:3,steps:1,bevelSize:.045,bevelThickness:.045,curveSegments:64});
   const m=mesh(body,[material(world.edge),material(world.edge)],parent,0,-.055,0);m.rotation.x=Math.PI/2;
   const topGeo=terrainGeometry(parent.userData.terrain);
-  const texture=textureLoader.load(`assets/images/texture_${world.texture}.jpg`);texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=4;
+  const texture=loadTexture(textureLoader,`assets/images/texture_${world.texture}.jpg`,e=>{failures.push(world.texture);console.warn(e);});texture.wrapS=texture.wrapT=THREE.RepeatWrapping;texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=4;
   const topmat=new THREE.MeshStandardMaterial({color:world.ground,map:texture,roughness:world.miniature==='neon'?.55:.96,side:THREE.DoubleSide});
   mesh(topGeo,topmat,parent,0,.012,0);
   // A narrow edge band gives all scenes a shared display base.
