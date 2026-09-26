@@ -2,8 +2,6 @@
 
 **GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation**
 
-[中文说明](README.zh-CN.md)
-
 This repository contains the static research project page. It includes an interactive six-sector 3D overview, the method figure, eight recorded game-world cases, and a high-resolution cyberpunk teaser.
 
 ## View locally
