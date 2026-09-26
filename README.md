@@ -4,7 +4,7 @@
 
 [中文说明](README.zh-CN.md)
 
-This repository contains the static research project page. It includes an interactive six-sector 3D overview, the method figure, eight recorded game-world cases, and a high-resolution multi-scene teaser.
+This repository contains the static research project page. It includes an interactive six-sector 3D overview, the method figure, eight recorded game-world cases, and a high-resolution cyberpunk teaser.
 
 ## View locally
 
@@ -24,7 +24,7 @@ The site has no build step and needs no API keys or external asset server. Three
 - Eight result cases, including the archived Amber Cloister and Ironwake Foundry.
 - Exploration and Boss combat, three camera perspectives, and five visual representations where available in the recorded case.
 - Orbitable authored-map previews and actual Unreal Engine images and videos.
-- A method figure and the archived bilingual framework source v1.0 download.
+- A method figure and an anonymous review copy of the archived bilingual framework source v1.0.
 
 The opening disc is a representative web composition, not a full Unreal level export. Result images and videos come from the recorded UE cases. The five modality images within each paired set share a frame and camera; separate camera recordings are not claimed to be simultaneous. Browser depth and semantic images are display previews, not raw scientific arrays.
 
@@ -51,3 +51,9 @@ The site contains approximately 530 MiB of display assets. Large map models load
 ## Attribution
 
 See [ATTRIBUTION.md](ATTRIBUTION.md) and [CAPTURE_NOTES.md](CAPTURE_NOTES.md). Three.js retains its MIT license and Draco retains its bundled license. Generated and user-supplied media retain their source/provider rights; these assets are not automatically relicensed under the dependency licenses. The archived framework source has its own documentation and terms.
+
+## Anonymous review distribution
+
+Page assets and links are relative and can be served under an anonymous repository URL. The site contains no author block, institution links, analytics, externally hosted fonts, or API credentials. Public figure metadata has been minimized. See [ANONYMOUS_REVIEW.md](ANONYMOUS_REVIEW.md) for the distribution scope and configuration notes.
+
+The source download is the archived v1.0 review copy, not a claim that later case results were measured under a new release. Configure your own compatible gateway host and key before using it. Repository ownership, commit history, and hosting redirects are platform metadata and must be hidden by the anonymous repository service; copying page files does not hide those automatically.

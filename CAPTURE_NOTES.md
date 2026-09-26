@@ -33,11 +33,11 @@ These September 19 benchmark exports already have correct display color. Their R
 
 The results section now offers an orbit/zoom miniature for each of six accepted scenes, including Ironwake Foundry. These are actual archived Blender environment layouts, reduced and batched for WebGL. Far-field terrain outside the playable route is cropped for presentation. Source material descriptions approximate the engine appearance, while the original Unreal gameplay captures remain authoritative. The viewer loads one map on demand, supports mouse/touch rotation and zoom, and has a reset control.
 
-Ironwake Foundry media uses the accepted source release and native five-channel frame 120. No exposure or gamma correction was applied. Cloister remains in results. The courtyard is withheld from promotion because its fourth diagnosed art preflight still failed; the front disc therefore retains the existing five accepted worlds. Original accepted scenes and historical page media were not changed.
+Ironwake Foundry media uses the accepted source release and native five-channel frame 120. No exposure or gamma correction was applied. Cloister remains in results. At this intermediate milestone, the courtyard was withheld after its fourth diagnosed art preflight; it was subsequently included following the user-directed closeout described below. Original accepted scenes and historical page media were not changed.
 
 ## Current courtyard capture · 2026-09-21
 
-Sunward Sentinel uses current-run rigged characters, generated olive/fountain/flowers, and Blender scene geometry. Source receipts: `scripts/courtyard_media_provenance_20260921.json`. The native UE captures retain their original transfer, resolution and timing. The earlier art refusals are preserved in the separate closeout record.
+Sunward Sentinel uses current-run rigged characters, generated olive/fountain/flowers, and Blender scene geometry. Source receipts are preserved separately from this display package. The native UE captures retain their original transfer, resolution and timing. The earlier art refusals are preserved in the separate closeout record.
 
 ## Underwater paired captures · 2026-09-21
 

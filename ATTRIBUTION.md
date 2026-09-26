@@ -38,21 +38,22 @@ Sakura's two main gameplay videos and archived camera thumbnails include a verif
 
 ## Framework source
 
-`assets/worldcrafter-framework-v1.0.zip` is a copy of the project's existing bilingual v1.0 release. Its own documentation and licensing apply to that source archive. This project-page folder supplies presentation assets and is separate from the game-generation runtime.
+`assets/gamecrafter-framework-v1.0-anonymous.zip` is an anonymous review copy of the archived bilingual v1.0 release. Gateway host and credential-variable names are neutralized; this packaging revision does not update historical production claims. Its own documentation and licensing apply to that source archive. This project-page folder supplies presentation assets and is separate from the game-generation runtime.
 
-New benchmark result videos are byte-identical copies of their accepted RGB exports. Their five aligned images use native frame 120 from one third-person combat sequence; independent camera thumbnails use frame 90. No Sakura transfer correction was applied to the new results. See `scripts/benchmark_media_provenance.json` for source hashes and transformations.
+New benchmark result videos are byte-identical copies of their accepted RGB exports. Their five aligned images use native frame 120 from one third-person combat sequence; independent camera thumbnails use frame 90. No Sakura transfer correction was applied to the new results. Source hashes and transformations are retained in the separate private production archive.
 
 The miniature viewer adds OrbitControls and DRACOLoader from Three.js 0.180.0 (MIT), with its bundled Draco decoder (Apache 2.0). See `vendor/three/examples/jsm/libs/draco/LICENSE`.
 
 ## Current courtyard assets · 2026-09-21
 
-Sunward Sentinel uses current-run rigged characters, generated olive/fountain/flowers, and Blender scene geometry. Source receipts: `scripts/courtyard_media_provenance_20260921.json`. The native UE captures retain their original transfer, resolution and timing. The earlier art refusals are preserved in the separate closeout record.
+Sunward Sentinel uses current-run rigged characters, generated olive/fountain/flowers, and Blender scene geometry. Source receipts are preserved separately from this display package. The native UE captures retain their original transfer, resolution and timing. The earlier art refusals are preserved in the separate closeout record.
 
 ## Underwater sources · 2026-09-21
 
-Abyssal Lock uses the accepted current-run diver player, pressure-suit Boss, submersible, coral and pressure relay, plus the authored habitat geometry. No other case assets were used for this production. Display exports preserve source references in scripts/underwater_media_provenance_20260921.json.
+Abyssal Lock uses the accepted current-run diver player, pressure-suit Boss, submersible, coral and pressure relay, plus the authored habitat geometry. No other case assets were used for this production. The separate production archive preserves original source references for the display exports.
 
+## Cyberpunk teaser
 
-## Multi-scene teaser · 2026-09-24
+The teaser combines a high-resolution render of the six-sector web diorama with actual Neon Switchyard Unreal Engine captures. The cyberpunk sector faces forward. Exploration shows the transit entrance; the three camera views show the repair-depot area. These independent viewpoint captures are not asserted to be simultaneous.
 
-The teaser combines a fresh high-resolution render of the same six-sector web diorama with four existing Unreal Engine captures. The garden uses the accepted first-person arrival-gate image; the neon and desert images use their accepted route captures; the snow image uses its accepted exploration camera. The images are cropped for composition without synthesizing or retouching scene content. The central miniature remains a representative web display rather than an Unreal level export.
+The combat RGB and four accompanying modalities come from frame 240 of the same third-person combat sequence (native 640 × 360). Skeleton transparency is composited on black; depth uses a fixed inverse linear camera-Z display from 0.5 to 30 m; semantic IDs use a fixed class palette. Cropping and proportional resizing are for presentation. The web diorama remains a representative composition, not an Unreal level export.
