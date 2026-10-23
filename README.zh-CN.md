@@ -28,17 +28,24 @@ GameCrafter 协调设计与审查模型、生成服务、Blender 和 Unreal Engi
 
 此仓库包含完整框架源码、Blender 脚本、UE Python 适配器、C++ 玩法与采集运行时、协议、提示词和离线测试。`fresh` 新任务不需要先前案例或私有资产库。复现的是**流程和验收协议**，不是随机生成资产的字节。原生工具、兼容模板动作与服务账户需要自行安装和配置。
 
-## 能力与软件分工
+## 框架产出
 
 | 输入 | 可玩产出 | 观测产出 |
 |---|---|---|
 | 文字；可选场景、玩家、Boss 参考图 | 连通漫游地图、近战区域、角色蒙皮与重定向动画、UE 工程及启动器 | 第一人称、第三人称、2.5D；RGB、米制深度、语义 ID、骨架、结构白膜 |
 
-设计 Agent 提取需求；资产规划 Agent 分配独特 Tripo 资产与可规模化的 Blender 结构；美术与地图 Agent 根据实际资源规划配色、建筑和路线。Blender 完成清理、蒙皮、详细场景及白膜；UE 完成动作重定向、玩法、渲染和同步采集。视觉审查与确定性检查提供证据，执行 Agent 负责诊断和局部修复。
+## 方法
 
-各角色通过 JSON 协议与带哈希的产物协作。当前本地节点顺序执行，独立远程环境资产请求可重叠。CLI 只自动应用受限的光照参数修复，复杂结构和拓扑问题需要执行 Agent 处理。
+![GameCrafter 方法概览](assets/method.jpg)
 
-参见[完整流程图](docs/workflow.html)、[Agent 协作图](docs/agent-collaboration.html)、[阶段协议](docs/WORKFLOW.md)和[代码地图](docs/CODE_MAP.md)。
+GameCrafter 由论文中的四个部分组成：
+
+1. **规格引导的编排**（Specification-Guided Orchestration）把提示词和可选参考图转为共享的游戏规格，并通过产物依赖图组织生产。
+2. **结构感知的资产合成**（Structure-Aware Asset Synthesis）生成可直接用于玩法的场景（美术规划、布局、路线、Blender 构建、白膜）和角色（网格、绑定、动作重定向、形变检查）。
+3. **多玩法世界实现**（Multi-Gameplay World Realization）把这些资产整合进同一个 Unreal Engine 工程，包含漫游、Boss 战、三种视角、渲染与物理。
+4. **闭环质量控制**（Closed-Loop Quality Control）结合视觉审查、自动试玩和多视角验证，定位失败、修复负责的阶段，只重跑受影响的步骤。在本仓库中，诊断和局部修复由执行 Agent 完成（见[让编码 Agent 执行](#让编码-agent-执行)）。
+
+阶段细节见[完整流程图](docs/workflow.html)、[Agent 协作图](docs/agent-collaboration.html)、[阶段协议](docs/WORKFLOW.md)和[代码地图](docs/CODE_MAP.md)。
 
 ## 十个生成的世界
 

@@ -36,31 +36,18 @@ This repository contains the complete framework source, Blender scripts, UE Pyth
 
 The `world_demo` profile tests both activities across all three cameras. `arena_demo` keeps combat, three cameras and all five channels. Default observations are six 360-frame sequences at 640×360 with fixed 60 Hz simulation. Real-time game performance is measured separately.
 
-## How the agents and tools cooperate
+## Method
 
-```mermaid
-flowchart LR
-  I[Prompt / reference images] --> D[Game Design Agent]
-  D --> C[Concept image]
-  C --> A[Asset Planning Agent]
-  A --> S[New Tripo sources + public PBR]
-  S --> W[Art / World Design Agents]
-  D --> H[Character source review]
-  H --> B[Blender cleanup + skinning]
-  W --> G[Blender detailed scene + whitebox]
-  B --> U[UE retargeting + gameplay + rendering]
-  G --> U
-  U --> V[Visual preflight + condition probes]
-  V --> Q[Gameplay / cameras / calibration / paired export]
-  Q --> R[Final Review Agent + release gate]
-  V -. current evidence .-> X[Executing agent: diagnose / scoped repair]
-  X -. affected artifacts .-> W
-  X -. source repair .-> H
-```
+![GameCrafter method overview](assets/method.jpg)
 
-Model roles communicate through validated JSON and hashed artifacts. The local stage executor is sequential; independent remote environment-source submissions can overlap. Structural repairs are performed by the executing coding agent. The CLI only applies bounded supported lighting patches automatically; it is not an unattended solver for every art or topology failure.
+GameCrafter has four parts, as described in the paper:
 
-See the [interactive workflow](docs/workflow.html), [agent collaboration](docs/agent-collaboration.html), [stage responsibilities](docs/WORKFLOW.md) and [code map](docs/CODE_MAP.md).
+1. **Specification-Guided Orchestration** turns the prompt and optional references into a shared game specification and runs production through an artifact dependency graph.
+2. **Structure-Aware Asset Synthesis** builds gameplay-ready environments (art plan, layout, routes, Blender authoring, whitebox) and characters (meshes, rigging, motion retargeting, deformation checks).
+3. **Multi-Gameplay World Realization** integrates these assets into one Unreal Engine project with exploration, boss combat, three cameras, rendering and physics.
+4. **Closed-Loop Quality Control** combines visual review, automated playtesting and multi-view validation, localizes failures, repairs the responsible stage and re-runs only the affected steps. In this repository, diagnosis and scoped repair are carried out by an executing coding agent (see [Use an executing agent](#use-an-executing-agent)).
+
+Stage-level details: [interactive workflow](docs/workflow.html), [agent collaboration](docs/agent-collaboration.html), [stage responsibilities](docs/WORKFLOW.md) and [code map](docs/CODE_MAP.md).
 
 ## Ten generated worlds
 
