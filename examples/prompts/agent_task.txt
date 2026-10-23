@@ -1,0 +1,14 @@
+Create a new GameCrafter world from this brief:
+BRIEF: Replace this line with the desired world, humanoid player, humanoid Boss, exploration destinations and visual style.
+RUN_DIRECTORY: runs/new_case
+OPTIONAL_SCENE_REFERENCE: None
+OPTIONAL_PLAYER_REFERENCE: None
+OPTIONAL_BOSS_REFERENCE: None
+
+Read AGENTS.md, README.md, AGENT_PROTOCOL.md and docs/WORKFLOW.md first. Use the configured machine.local.json and process environment credentials. Run doctor before paid work. Use world_demo and fresh source policy: generate new content and obtain declared public PBR sources without depending on prior cases or private catalogs.
+
+Execute the complete framework. Inspect actual source anatomy before binding and evaluated deformation before integration. Build detailed and structural scenes together. Review current UE overview, routes and destinations, then complete all camera/activity probes, gameplay, facing, camera switching, independent calibration and native/export pairing.
+
+If a gate fails, preserve task IDs and failed evidence; run diagnose and impact, identify the responsible layer, repair in a new revision and resume affected consumers. Do not soften gates, reduce required clips or repeat unchanged rejected evidence. Complete source-bound diagnosis after three distinct environmental refusals. Bounded automatic lighting fixes do not replace structural repair.
+
+Deliver the exact project/launcher and manifest paths, acceptance evidence, all five paired channels for both activities and three cameras, and any pending observations. Verify replay and actually observe responsive launch and view switching where a display is available. Keep generated inputs, credentials and API responses out of Git.

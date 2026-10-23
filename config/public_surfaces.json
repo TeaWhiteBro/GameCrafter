@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "source": "https://polyhaven.com",
+  "license": "CC0-1.0",
+  "description": "Public source identifiers, not bundled texture files. The demand planner selects maps for each brief; the current run downloads them with checksums.",
+  "materials": {
+    "monastery_stone_floor": {
+      "category": "paving",
+      "scale_cm": 240,
+      "appearance": "Worn grey stone paving"
+    },
+    "large_sandstone_blocks": {
+      "category": "masonry",
+      "scale_cm": 300,
+      "appearance": "Warm large sandstone blocks"
+    },
+    "castle_brick_02_red": {
+      "category": "masonry",
+      "scale_cm": 250,
+      "appearance": "Red brick wall"
+    },
+    "clay_roof_tiles_02": {
+      "category": "roof",
+      "scale_cm": 240,
+      "appearance": "Clay roof tiles"
+    },
+    "old_wooden_floor_02": {
+      "category": "wood",
+      "scale_cm": 220,
+      "appearance": "Wooden floor boards"
+    },
+    "medieval_wood": {
+      "category": "wood",
+      "scale_cm": 180,
+      "appearance": "Weathered structural timber"
+    },
+    "rusty_metal_02": {
+      "category": "metal",
+      "scale_cm": 150,
+      "appearance": "Oxidized metal"
+    },
+    "blue_metal_plate": {
+      "category": "metal",
+      "scale_cm": 180,
+      "appearance": "Blue painted metal panel"
+    },
+    "clay_plaster": {
+      "category": "plaster",
+      "scale_cm": 220,
+      "appearance": "Warm clay plaster"
+    },
+    "grey_plaster": {
+      "category": "plaster",
+      "scale_cm": 220,
+      "appearance": "Grey plaster"
+    },
+    "forest_leaves_03": {
+      "category": "ground",
+      "scale_cm": 250,
+      "appearance": "Forest leaf litter"
+    },
+    "red_sand": {
+      "category": "ground",
+      "scale_cm": 240,
+      "appearance": "Red sand"
+    },
+    "snow_02": {
+      "category": "ground",
+      "scale_cm": 250,
+      "appearance": "Snow"
+    },
+    "rock_boulder_dry": {
+      "category": "rock",
+      "scale_cm": 300,
+      "appearance": "Dry rock surface"
+    },
+    "mossy_sandstone": {
+      "category": "rock",
+      "scale_cm": 250,
+      "appearance": "Mossy sandstone"
+    },
+    "red_sandstone_tiles": {
+      "category": "paving",
+      "scale_cm": 240,
+      "appearance": "Red sandstone tiles"
+    },
+    "white_plaster_02": {
+      "category": "plaster",
+      "scale_cm": 220,
+      "appearance": "Light white plaster"
+    },
+    "grey_roof_tiles": {
+      "category": "roof",
+      "scale_cm": 240,
+      "appearance": "Grey roof tiles"
+    },
+    "lacquered_cherry_wood": {
+      "category": "wood",
+      "scale_cm": 180,
+      "appearance": "Lacquered cherry timber"
+    },
+    "flower_scattered_gravel": {
+      "category": "ground",
+      "scale_cm": 240,
+      "appearance": "Gravel and fallen flower details"
+    },
+    "slab_tiles": {
+      "category": "paving",
+      "scale_cm": 240,
+      "appearance": "Large fitted paving slabs"
+    },
+    "clean_asphalt": {
+      "category": "ground",
+      "scale_cm": 240,
+      "appearance": "Clean asphalt road surface"
+    },
+    "metal_plate": {
+      "category": "metal",
+      "scale_cm": 180,
+      "appearance": "Metal sheet"
+    },
+    "concrete_pavement": {
+      "category": "paving",
+      "scale_cm": 240,
+      "appearance": "Concrete pavement"
+    }
+  }
+}

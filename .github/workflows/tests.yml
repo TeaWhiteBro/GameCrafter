@@ -1,0 +1,21 @@
+name: Offline framework tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r requirements.lock.txt
+      - run: python -m unittest discover -s tests -v
+      - run: python pipeline.py --version
+      - run: python scripts/verify_repository.py
+      - run: python scripts/build_release.py --out ../clean-source
+      - run: python -m unittest discover -s tests -v
+        working-directory: ../clean-source
+      - run: python scripts/verify_repository.py
+        working-directory: ../clean-source

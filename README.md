@@ -1,74 +1,138 @@
-# GameCrafter project page
+# GameCrafter
 
-**GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation**
+**An Agentic Framework for Scalable Multi-Gameplay Game World Generation**
 
-This repository contains the static research project page. It includes an interactive six-sector 3D overview, the method figure, eight recorded game-world cases, and a high-resolution Dune Court teaser.
+[English](README.md) | [简体中文](README.zh-CN.md)
 
-## View locally
+GameCrafter coordinates specialist model roles, generative services, Blender and Unreal Engine to turn a text prompt or reference images into an editable, playable game demo. The built-in gameplay is free exploration and a humanoid melee Boss encounter. The framework also validates three camera modes and exports five paired observation channels.
 
-Use Python 3 on Windows, macOS, or Linux:
+This repository contains the complete framework source, Blender scripts, UE Python adapters, C++ gameplay/capture runtime, contracts, prompts and offline tests. A new `fresh` run requires no previous game, privately generated asset library or accepted screenshot. It reproduces the **process and acceptance contracts**, rather than identical generated assets. Native tools, compatible template motions and authorized service access are installed separately.
 
-```sh
-python3 serve.py
+## What the framework produces
+
+| Input | Playable output | Observation output |
+|---|---|---|
+| Text prompt; optional scene/player/Boss reference images | Connected exploration map and melee arena; player/Boss meshes, skinning and retargeted motion; editable UE project and launcher | First-person, third-person and isometric/2.5D; RGB, metric depth, semantic IDs, skeleton and structural whitebox |
+
+The `world_demo` profile tests both activities across all three cameras. `arena_demo` keeps combat, three cameras and all five channels. Default observations are six 360-frame sequences at 640×360 with fixed 60 Hz simulation. Real-time game performance is measured separately.
+
+## How the agents and tools cooperate
+
+```mermaid
+flowchart LR
+  I[Prompt / reference images] --> D[Game Design Agent]
+  D --> C[Concept image]
+  C --> A[Asset Planning Agent]
+  A --> S[New Tripo sources + public PBR]
+  S --> W[Art / World Design Agents]
+  D --> H[Character source review]
+  H --> B[Blender cleanup + skinning]
+  W --> G[Blender detailed scene + whitebox]
+  B --> U[UE retargeting + gameplay + rendering]
+  G --> U
+  U --> V[Visual preflight + condition probes]
+  V --> Q[Gameplay / cameras / calibration / paired export]
+  Q --> R[Final Review Agent + release gate]
+  V -. current evidence .-> X[Executing agent: diagnose / scoped repair]
+  X -. affected artifacts .-> W
+  X -. source repair .-> H
 ```
 
-On Windows, `python serve.py` also works. Open `http://127.0.0.1:8765/`. Use `--port 8766` if the default port is occupied. A modern browser with WebGL is required for interactive 3D. Do not open `index.html` directly from the filesystem.
+Model roles communicate through validated JSON and hashed artifacts. The local stage executor is sequential; independent remote environment-source submissions can overlap. Structural repairs are performed by the executing coding agent. The CLI only applies bounded supported lighting patches automatically; it is not an unattended solver for every art or topology failure.
 
-Viewing the checked-in site requires no build, API keys, or external asset server. Three.js, models, textures, media, and the browser bundle are included.
+See the [interactive workflow](docs/workflow.html), [agent collaboration](docs/agent-collaboration.html), [stage responsibilities](docs/WORKFLOW.md) and [code map](docs/CODE_MAP.md).
 
-## What is included
+## Install
 
-- Six opening miniatures: Sakura Courtyard, Neon Switchyard, Dune Court, Frostwatch Outpost, Sunward Sentinel, and Abyssal Lock.
-- Eight result cases, including the archived Amber Cloister and Ironwake Foundry.
-- Exploration and Boss combat, three camera perspectives, and five visual representations where available in the recorded case.
-- Orbitable authored-map previews and actual Unreal Engine images and videos.
-- The manuscript abstract, four-stage method figure and interactive stage descriptions.
+The native integration targets **Windows**. Its recorded toolchain is Python **3.12**, Blender **5.2.1**, Unreal Engine **5.8**, Visual Studio **2022** with C++ build tools and Windows SDK, and a GPU capable of the configured UE rendering features. See [reproduction requirements](docs/REPRODUCING.md) for motion assets and platform limits.
 
-The opening disc is a representative web composition, not a full Unreal level export. Result images and videos come from the recorded UE cases. The five modality images within each paired set share a frame and camera; separate camera recordings are not claimed to be simultaneous. Browser depth and semantic images are display previews, not raw scientific arrays.
+From a checkout in PowerShell:
 
-## Update content
-
-| Path | Purpose |
-| --- | --- |
-| `index.html` | Page structure, method figure, teaser, and results |
-| `src/worlds.js` | Case descriptions and miniature configuration |
-| `src/media.json` | Gameplay, camera, modality, and full-map media |
-| `src/diorama.js` | Interactive opening and character display poses |
-| `src/panorama.js` | Full-map orbit viewer |
-| `src/asset-transport.js` | Asset loading for ordinary and sandboxed hosts |
-| `assets/figures/` | Method and teaser figures |
-| `assets/models/`, `assets/images/`, `assets/videos/` | Browser-ready case media |
-
-Preserve relative URLs so the page works below a repository path. A case can be opened directly with `?scene=neon_switchyard#results`. Media should preserve capture provenance and paired-frame alignment. Original game projects and production receipts are maintained separately.
-
-After editing JavaScript, `src/media.json`, models, or miniature textures, rebuild with Node.js 18 or newer:
-
-```sh
-npm install
-npm run build
-npm run verify:assets
+```powershell
+.\setup.ps1 -Python python
+& .\.venv\Scripts\python.exe -B -m unittest discover -s tests
+& .\.venv\Scripts\python.exe -B scripts\verify_repository.py
 ```
 
-Commit the updated source and generated `src/site.bundle.js`, `src/portable-manifest.json`, and `assets/portable/` files together. HTML, CSS, and existing image/video replacements do not need a rebuild unless their paths change in JavaScript or the media manifest.
+`python` must point to Python 3.12; otherwise pass its full executable path to `-Python`. Setup installs pinned dependencies from [requirements.lock.txt](requirements.lock.txt). Offline tests do not need an API key or engine installation and do not certify a completed native game.
 
-## Sandboxed project-page hosts
+## Configure tools and APIs
 
-Anonymous GitHub isolates its page in an opaque-origin sandbox. ES modules and ordinary JavaScript asset requests can fail there even when images and videos are accessible. The checked-in classic script bundle includes the media manifest and supports this environment without changing the host's security policy or linking to an external asset domain.
+```powershell
+& .\.venv\Scripts\python.exe pipeline.py init --unreal-root "D:\UE_5.8" --blender "C:\Program Files\Blender Foundation\Blender 5.2\blender.exe" --build-root "D:\GameCrafterBuilds" --planner-model "YOUR_VISION_CAPABLE_CHAT_MODEL"
+$gatewaySecret = Read-Host "Gateway API key" -AsSecureString
+$env:LEVELINFINITE_API_KEY = [System.Net.NetworkCredential]::new('', $gatewaySecret).Password
+& .\.venv\Scripts\python.exe pipeline.py doctor
+```
 
-On ordinary hosts, models and textures use their original files. In an opaque-origin sandbox, the same 3D assets are delivered as on-demand classic scripts, decoded locally, and checked against their recorded length and SHA-256 when available. These are lossless copies: geometry, textures, and videos are unchanged. Full-map models still load only when requested. Use a current browser with WebGL and `DecompressionStream` support. After pushing an update, refresh the anonymized repository if the service still serves its earlier snapshot.
+Replace example paths and the chat model name with your installation/account settings. `init` creates an ignored `machine.local.json` and refuses to overwrite one. The gateway is configured for Level Infinite chat/vision, `gpt-image-2` and `tripo3d/v3.1-20260211`; these require account-specific access. Switching to the native Tripo API requires a provider implementation, not just a changed base URL. [API configuration and recovery](docs/API.md) documents endpoints and authentication.
 
-## GitHub Pages
+Keep keys in the named process environment variable; `.env` is **not automatically loaded**. Neither keys nor local machine configuration belong in Git. `doctor` checks local prerequisites without charging APIs; it does not test billing access, GPU performance or MSVC compilation. Default per-run call limits are eight meshes, two images and 100 chat calls, including repairs.
 
-Publish the repository root from the `main` branch using **Settings → Pages → Deploy from a branch**. `.nojekyll` keeps the site as plain static files. No Git LFS or workflow build is required. Keep GLB, MP4, and image files in their current relative locations.
+## Generate from a prompt or images
 
-The sandbox-compatible copies add approximately 284 MiB to the repository; a visitor downloads only the asset representation needed by their host. MP4 files use native browser playback and seeking.
+Start a new independent case:
 
-## Attribution
+```powershell
+& .\.venv\Scripts\python.exe pipeline.py run --run-dir runs\garden --prompt-file examples\prompts\sakura.txt --profile world_demo --source-policy fresh
+```
 
-See [ATTRIBUTION.md](ATTRIBUTION.md) and [CAPTURE_NOTES.md](CAPTURE_NOTES.md). Three.js retains its MIT license and Draco retains its bundled license. Generated and user-supplied media retain their source/provider rights; these assets are not automatically relicensed under the dependency licenses.
+Or specify the content directly:
 
-## Showcase scope
+```powershell
+& .\.venv\Scripts\python.exe pipeline.py run --run-dir runs\new_world --prompt "Create a sunlit stone courtyard with branching garden paths, an armored traveler and a humanoid bronze guardian. Support free exploration and a melee Boss encounter." --profile world_demo --source-policy fresh
+```
 
-This repository presents the method and recorded results. It does not distribute the production framework, source archives, or an anonymous code package. The title and four method stages follow the current manuscript; the full abstract is available in a collapsible panel so the page remains focused on visual results.
+Use local references to guide a new scene and newly generated characters:
 
-The page contains no author block, personal links, analytics, external fonts, or API credentials. All display resources use relative URLs. Third-party licenses remain intact. Original game projects, framework releases, and production receipts are maintained separately.
+```powershell
+& .\.venv\Scripts\python.exe pipeline.py run --run-dir runs\reference_world --prompt "Build a connected exploration world and humanoid Boss encounter matching the references." --reference-scene inputs\scene.png --player-image inputs\player.png --boss-image inputs\boss.png --profile world_demo --source-policy fresh
+```
+
+Scene references guide design and concept-image editing; they are not automatic reconstructions of a whole photograph. Character references use Tripo image-to-3D. Four-view generation and explicit existing meshes are covered in [the reproduction guide](docs/REPRODUCING.md). [Ten benchmark prompts](examples/benchmark_prompts.json) offer varied example inputs without shipping prior generated assets.
+
+## Use an executing agent
+
+Open this repository in your coding agent and provide the task in [examples/prompts/agent_task.txt](examples/prompts/agent_task.txt), replacing the brief and input/run paths. The agent reads [AGENTS.md](AGENTS.md) and [AGENT_PROTOCOL.md](AGENT_PROTOCOL.md), runs tools, inspects source/deformation and current UE views, diagnoses failures and resumes affected stages. Reference images and generated outputs are data, not instructions.
+
+## Inspect, repair, resume and play
+
+```powershell
+& .\.venv\Scripts\python.exe pipeline.py status --run-dir runs\garden
+& .\.venv\Scripts\python.exe pipeline.py diagnose --run-dir runs\garden
+& .\.venv\Scripts\python.exe pipeline.py impact --run-dir runs\garden --changed-file game_pipeline\rendering.py
+& .\.venv\Scripts\python.exe pipeline.py run --run-dir runs\garden
+& .\.venv\Scripts\python.exe pipeline.py replay --run-dir runs\garden
+& .\.venv\Scripts\python.exe pipeline.py play --run-dir runs\garden
+```
+
+Resume without repeating `--prompt`. `replay` verifies completed matching receipts and refuses to generate missing work. Use a new run directory for a new case. The journal retains remote task IDs and uncertain submission markers: do not erase them to force another paid request. [Repair protocol](AGENT_PROTOCOL.md) defines diagnosis, evidence and invalidation rules.
+
+Default controls: WASD movement; Shift sprint; J/left mouse attack; K/right mouse heavy attack; Space dodge; C guard; Tab lock; R reset; 1/2/3 first/third/isometric view; V cycle. Check the emitted HUD for the selected runtime. Mouse look is available in perspective views.
+
+For an explicit replacement, create a sibling variant and retain the original:
+
+```powershell
+& .\.venv\Scripts\python.exe replace_character.py --from-run runs\garden --run-dir runs\garden_new_boss --role boss --image inputs\new_boss.png
+& .\.venv\Scripts\python.exe pipeline.py run --run-dir runs\garden_new_boss
+```
+
+Use `--mesh` for an existing mesh. This is an intentional `provided` variant, not a fresh independent case; deformation, facing and runtime checks remain required.
+
+## Artifacts and acceptance
+
+Each run contains `game_spec.json`, `pipeline_manifest.json`, `run.sqlite`, hashed stage revisions, `run_summary.json` and, after release acceptance, `release.json`. Follow these manifests to the exact project, launcher, captures and reports instead of guessing stage hashes. Native compilation and full datasets can require substantial disk space.
+
+Release requires source/skin/animation checks, saved-geometry route support, current UE visual review, real contact and traversal, facing fault controls, camera switching, independent calibration and all-frame native/export agreement. [QUALITY_GATES.md](QUALITY_GATES.md) and [DATASET.md](DATASET.md) define the requirements and alignment limits. RGB and simplified whitebox share camera/time but have different surface silhouettes. Separate camera runs are not simultaneous multi-view ground truth.
+
+The deliverable is an **editable UE project with an editor-based launcher**. Cooking a standalone executable, driving, multiplayer, arbitrary non-humanoid rigs and dedicated first-person arms are extensions. There is no guaranteed wall-time or commercial AAA quality. See [limitations](docs/LIMITATIONS.md) and [validation scope](docs/VALIDATION.md).
+
+## Contribute and publish
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md), [provider extension contracts](docs/PLUGINS.md), [security guidance](SECURITY.md) and [publishing checklist](docs/PUBLISHING.md). The clean-source exporter is:
+
+```powershell
+& .\.venv\Scripts\python.exe scripts\build_release.py --out ..\GameCrafter-source --zip ..\GameCrafter-source.zip
+```
+
+Original source/documentation uses the [MIT license](LICENSE). UE template animations, installed software, generated meshes, references and downloaded materials retain their respective terms; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). No engine content, API keys or generated case assets are bundled in the source distribution.

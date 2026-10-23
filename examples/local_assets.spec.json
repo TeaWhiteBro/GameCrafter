@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "title": "Your Demo",
+  "prompt": "Your game brief",
+  "art_direction": {
+    "summary": "Choose a coherent material and lighting direction",
+    "concept_prompt": "Describe your environment concept"
+  },
+  "concept": {
+    "provider": "local",
+    "path": "assets/concept.png"
+  },
+  "characters": {
+    "player": {
+      "name": "Player",
+      "morphology": "humanoid",
+      "height_m": 1.8,
+      "triangle_budget": 50000,
+      "source": {
+        "provider": "local",
+        "path": "assets/player.glb"
+      }
+    },
+    "boss": {
+      "name": "Boss",
+      "morphology": "humanoid",
+      "height_m": 2.8,
+      "triangle_budget": 65000,
+      "source": {
+        "provider": "local",
+        "path": "assets/boss.glb"
+      }
+    }
+  },
+  "scene": {
+    "size_m": 24,
+    "floor_material": "ground",
+    "path_material": "stone",
+    "paving": true,
+    "materials": {
+      "ground": {
+        "color": [
+          0.18,
+          0.15,
+          0.12
+        ],
+        "roughness": 0.8,
+        "metallic": 0,
+        "texture_set": ""
+      },
+      "stone": {
+        "color": [
+          0.45,
+          0.43,
+          0.4
+        ],
+        "roughness": 0.7,
+        "metallic": 0,
+        "texture_set": ""
+      }
+    },
+    "objects": [
+      {
+        "kind": "arch",
+        "position": [
+          0,
+          8,
+          0
+        ],
+        "scale": [
+          5,
+          1,
+          4.5
+        ],
+        "yaw_deg": 0,
+        "material": "stone"
+      }
+    ]
+  },
+  "spawns": {
+    "player": [
+      0,
+      -3,
+      0
+    ],
+    "boss": [
+      0,
+      3,
+      0
+    ]
+  },
+  "lighting": {
+    "sun_pitch": -38,
+    "sun_yaw": -52,
+    "sun_intensity": 5.5,
+    "sun_color": [
+      1,
+      0.84,
+      0.63
+    ],
+    "sky_intensity": 0.82,
+    "fog_density": 0.004,
+    "exposure_bias": 0.15
+  },
+  "gameplay": {
+    "player_health": 120,
+    "boss_health": 780,
+    "camera_width_cm": 2200,
+    "camera_pitch": -43,
+    "camera_yaw": -90,
+    "target_fps": 60
+  },
+  "scene_agent": false,
+  "review_agent": false
+}

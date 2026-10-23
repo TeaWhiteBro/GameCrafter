@@ -1,0 +1,31 @@
+{
+  "project": "GameCrafter",
+  "version": "1.2.0",
+  "distribution": "Complete public framework source",
+  "checks": {
+    "fresh_python_312_environment": true,
+    "pinned_dependency_installation": true,
+    "clean_export_tests": {
+      "passed": true,
+      "tests": 473,
+      "failures": 0,
+      "errors": 0
+    },
+    "source_audit": true,
+    "documentation_links": true,
+    "world_demo_dag": true,
+    "arena_demo_dag": true,
+    "cli_help_and_version": true,
+    "workflow_diagram_source_sync": true
+  },
+  "not_executed": [
+    "Paid provider generation",
+    "New full native Blender/UE production",
+    "Native responsive launcher observation"
+  ],
+  "scope": "Offline source-distribution checks; full native acceptance follows the documented toolchain and gates.",
+  "dependency_notes": [
+    "Pinned NumPy/Pillow emit deprecation warnings in some tests; no test failures."
+  ],
+  "contents_policy": "Current framework source and contracts only; no credentials, private machine configuration, development retrospectives, generated games or vendor motion data."
+}

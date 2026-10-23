@@ -1,15 +1,12 @@
-* text=auto eol=lf
-*.sh text eol=lf
-*.js text eol=lf
-*.css text eol=lf
-*.html text eol=lf
+* text=auto
+*.py text eol=lf
 *.md text eol=lf
-*.glb binary
-*.png binary
-*.webp binary
-*.jpg binary
-*.mp4 binary
-*.zip binary
-*.pdf binary
-assets/portable/*.js binary
-src/site.bundle.js -diff
+*.json text eol=lf
+*.svg text eol=lf
+*.html text eol=lf
+*.yml text eol=lf
+*.ps1 text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.cs text eol=lf
+*.sh text eol=lf

@@ -1,0 +1,77 @@
+{
+  "language": "en",
+  "difficulty_status": "Provisional design tiers, not measured empirical difficulty.",
+  "common_requirements": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.",
+  "cases": [
+    {
+      "id": "01",
+      "title": "Sunlit Mediterranean Courtyard",
+      "difficulty": "Easy",
+      "scene_prompt": "Build a sunlit Mediterranean courtyard with warm limestone walls, blue wooden doors, terracotta pots, and climbing vines. Connect a central combat plaza to a shaded arcade and a small fountain garden using short, level paths. A lightly armored traveler faces a bronze town sentinel. Use warm daylight, soft shadows, and clearly differentiated stone, wood, and metal.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a sunlit Mediterranean courtyard with warm limestone walls, blue wooden doors, terracotta pots, and climbing vines. Connect a central combat plaza to a shaded arcade and a small fountain garden using short, level paths. A lightly armored traveler faces a bronze town sentinel. Use warm daylight, soft shadows, and clearly differentiated stone, wood, and metal."
+    },
+    {
+      "id": "02",
+      "title": "Autumn Woodland Shrine",
+      "difficulty": "Easy",
+      "scene_prompt": "Build a quiet autumn woodland around a small timber shrine, with red and golden leaves, exposed roots, mossy stones, and fallen logs. Connect an open combat clearing to a stream crossing and a sheltered lookout through two distinct forest paths. A forest scout faces a wood-armored guardian. Use dappled afternoon light and keep foliage clear of playable routes.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a quiet autumn woodland around a small timber shrine, with red and golden leaves, exposed roots, mossy stones, and fallen logs. Connect an open combat clearing to a stream crossing and a sheltered lookout through two distinct forest paths. A forest scout faces a wood-armored guardian. Use dappled afternoon light and keep foliage clear of playable routes."
+    },
+    {
+      "id": "03",
+      "title": "Desert Caravanserai",
+      "difficulty": "Medium",
+      "scene_prompt": "Build a desert caravanserai with sandstone arches, shaded market stalls, woven awnings, ceramic vessels, and windblown sand gathering along building edges. Connect a central trading court to a covered passage and a raised watch platform. A desert nomad faces an armored dune warden. Use strong sunlight, cool shaded interiors, and convincing transitions between sand, paving, and architecture.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a desert caravanserai with sandstone arches, shaded market stalls, woven awnings, ceramic vessels, and windblown sand gathering along building edges. Connect a central trading court to a covered passage and a raised watch platform. A desert nomad faces an armored dune warden. Use strong sunlight, cool shaded interiors, and convincing transitions between sand, paving, and architecture."
+    },
+    {
+      "id": "04",
+      "title": "Snowbound Mountain Outpost",
+      "difficulty": "Medium",
+      "scene_prompt": "Build a snowbound mountain outpost with dark timber lodges, stone retaining walls, packed-snow paths, and warm lanterns. Connect a sheltered combat yard to a frozen-stream crossing and a higher observation terrace using a gradual ramp. A winter ranger faces a frost-armored sentinel. Distinguish fresh snow, compacted tracks, ice, wood, and metal under cold overcast light.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a snowbound mountain outpost with dark timber lodges, stone retaining walls, packed-snow paths, and warm lanterns. Connect a sheltered combat yard to a frozen-stream crossing and a higher observation terrace using a gradual ramp. A winter ranger faces a frost-armored sentinel. Distinguish fresh snow, compacted tracks, ice, wood, and metal under cold overcast light."
+    },
+    {
+      "id": "05",
+      "title": "Japanese Spring Sanctuary",
+      "difficulty": "Medium",
+      "scene_prompt": "Build a Japanese spring sanctuary with cherry blossoms, vermilion gates, tiled roofs, timber verandas, and stone garden paths. Connect an open temple courtyard to a pond-side pavilion and a bamboo tea garden through an asymmetric branching route. A wandering ronin faces an armored shrine guardian. Use soft morning light, layered planting, and coherent transitions between paving, soil, and wooden structures.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a Japanese spring sanctuary with cherry blossoms, vermilion gates, tiled roofs, timber verandas, and stone garden paths. Connect an open temple courtyard to a pond-side pavilion and a bamboo tea garden through an asymmetric branching route. A wandering ronin faces an armored shrine guardian. Use soft morning light, layered planting, and coherent transitions between paving, soil, and wooden structures."
+    },
+    {
+      "id": "06",
+      "title": "Overgrown Tropical Water Temple",
+      "difficulty": "Hard",
+      "scene_prompt": "Build an abandoned tropical water temple with carved stone terraces, large roots, hanging vines, shallow pools, and broken masonry. Connect a dry combat terrace to a flooded courtyard and an upper sanctuary through raised paths, a short bridge, and broad stairs. An expedition scout faces a copper-armored temple guardian. Balance humid sunlight, deep vegetation shadows, reflective water, and clearly readable routes.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild an abandoned tropical water temple with carved stone terraces, large roots, hanging vines, shallow pools, and broken masonry. Connect a dry combat terrace to a flooded courtyard and an upper sanctuary through raised paths, a short bridge, and broad stairs. An expedition scout faces a copper-armored temple guardian. Balance humid sunlight, deep vegetation shadows, reflective water, and clearly readable routes."
+    },
+    {
+      "id": "07",
+      "title": "Steampunk Foundry District",
+      "difficulty": "Hard",
+      "scene_prompt": "Build a working steampunk foundry district with brick workshops, brass machinery, riveted steel walkways, large pipes, and furnace light. Connect a clear assembly-floor combat area to a loading yard and an elevated control platform, including a loop and a side branch. A workshop mechanic faces a heavy industrial automaton. Make machinery structurally connected and distinguish oily steel, oxidized brass, brick, and soot.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a working steampunk foundry district with brick workshops, brass machinery, riveted steel walkways, large pipes, and furnace light. Connect a clear assembly-floor combat area to a loading yard and an elevated control platform, including a loop and a side branch. A workshop mechanic faces a heavy industrial automaton. Make machinery structurally connected and distinguish oily steel, oxidized brass, brick, and soot."
+    },
+    {
+      "id": "08",
+      "title": "Gothic Cathedral Quarter",
+      "difficulty": "Hard",
+      "scene_prompt": "Build a dark Gothic cathedral quarter with towering buttresses, vaulted passages, stained-glass windows, weathered statues, and candlelit alcoves. Connect a nave-like combat court to a crypt entrance and a bell-tower terrace through routes at different elevations. An armored pilgrim faces a cathedral executioner. Use moonlight and warm practical lights while preserving readable silhouettes, architectural depth, and safe traversal through shadowed areas.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a dark Gothic cathedral quarter with towering buttresses, vaulted passages, stained-glass windows, weathered statues, and candlelit alcoves. Connect a nave-like combat court to a crypt entrance and a bell-tower terrace through routes at different elevations. An armored pilgrim faces a cathedral executioner. Use moonlight and warm practical lights while preserving readable silhouettes, architectural depth, and safe traversal through shadowed areas."
+    },
+    {
+      "id": "09",
+      "title": "Dense Cyberpunk Neon District",
+      "difficulty": "Very hard",
+      "scene_prompt": "Build a dense cyberpunk district after rain, with abundant neon advertisements, layered signs, futuristic storefronts, rooftop equipment, and a varied high-rise skyline. Connect a market combat plaza to a narrow food alley, an elevated transit entrance, and a lower repair depot. Include a parked hover vehicle, an autonomous cargo rover, and charging stations. A cyber courier faces an armored security enforcer. Balance vivid advertising with readable surfaces and localized wet-road reflections.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a dense cyberpunk district after rain, with abundant neon advertisements, layered signs, futuristic storefronts, rooftop equipment, and a varied high-rise skyline. Connect a market combat plaza to a narrow food alley, an elevated transit entrance, and a lower repair depot. Include a parked hover vehicle, an autonomous cargo rover, and charging stations. A cyber courier faces an armored security enforcer. Balance vivid advertising with readable surfaces and localized wet-road reflections."
+    },
+    {
+      "id": "10",
+      "title": "Underwater Research Habitat",
+      "difficulty": "Very hard",
+      "scene_prompt": "Build a sealed underwater research habitat with curved observation windows, pressure doors, laboratory equipment, cable conduits, and modular metal interiors. Connect a dry central docking-hall combat area to a glass observation gallery, a maintenance bay, and an upper control room. A marine engineer faces a humanoid pressure-suit guardian. Show ocean water, coral, and structural supports outside the windows; combine cool exterior light with warm interior fixtures while keeping all gameplay inside dry, traversable spaces.",
+      "prompt": "Create a playable 3D game demo with a controllable humanoid player, one humanoid melee boss, and a connected environment for free exploration and combat. Support movement, melee attacks, dodging, readable attack anticipation, hit reactions, and encounter reset. Keep the combat space unobstructed and all intended exploration routes traversable.\n\nBuild a sealed underwater research habitat with curved observation windows, pressure doors, laboratory equipment, cable conduits, and modular metal interiors. Connect a dry central docking-hall combat area to a glass observation gallery, a maintenance bay, and an upper control room. A marine engineer faces a humanoid pressure-suit guardian. Show ocean water, coral, and structural supports outside the windows; combine cool exterior light with warm interior fixtures while keeping all gameplay inside dry, traversable spaces."
+    }
+  ]
+}

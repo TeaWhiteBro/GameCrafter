@@ -1,0 +1,29 @@
+{
+  "text": {
+    "provider": "tripo",
+    "mode": "text",
+    "prompt": "Your humanoid asset description, neutral A pose, separated limbs, unarmed, no base"
+  },
+  "image": {
+    "provider": "tripo",
+    "mode": "image",
+    "image": "assets/character.png"
+  },
+  "multiview": {
+    "provider": "tripo",
+    "mode": "multiview",
+    "front": "assets/front.png",
+    "left": "assets/left.png",
+    "back": "assets/back.png",
+    "right": "assets/right.png"
+  },
+  "resume": {
+    "provider": "tripo",
+    "mode": "resume",
+    "task_id": "EXISTING_TASK_ID"
+  },
+  "local": {
+    "provider": "local",
+    "path": "assets/character.glb"
+  }
+}

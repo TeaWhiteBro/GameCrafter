@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1300" viewBox="0 0 1920 1300" role="img" aria-labelledby="title desc">
+<title id="title">Agent collaboration and game design — GameCrafter </title>
+<desc id="desc">An executing agent coordinates specialist design roles through shared validated artifacts. Design, asset planning, art direction and world design guide image generation, Tripo, Blender and Unreal. Source and visual reviewers inspect current evidence and return structured issues for targeted repair. Executable gameplay, camera and data checks remain separate from model reviewers.</desc>
+<defs>
+<marker id="normal" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 Z" fill="#91a7b4"/></marker>
+<marker id="design" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 Z" fill="#087769"/></marker>
+<marker id="evidence" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 Z" fill="#315fa9"/></marker>
+<marker id="repair" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 Z" fill="#b05235"/></marker>
+<marker id="review" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1,1 L9,5 L1,9 Z" fill="#7553a4"/></marker>
+</defs><style>text{font-family:Inter,"Segoe UI",Arial,sans-serif}a{text-decoration:none}a:hover>rect:first-of-type,a:focus>rect:first-of-type{stroke:#087769;stroke-width:2}</style>
+<rect x="0" y="0" width="1920" height="1300" rx="0" fill="#f8fafb" stroke="none"/>
+<text x="40" y="65" font-size="44" font-weight="650" fill="#173143" >Agent Collaboration &amp; Game Design</text>
+<text x="40" y="101" font-size="21" font-weight="400" fill="#526875" >GameCrafter / From design intent to a grounded, playable world</text>
+<rect x="40" y="129" width="13" height="13" rx="3" fill="#087769" stroke="none"/>
+<text x="63" y="142" font-size="16" font-weight="400" fill="#526875" >Specialist design</text>
+<rect x="340" y="129" width="13" height="13" rx="3" fill="#7553a4" stroke="none"/>
+<text x="363" y="142" font-size="16" font-weight="400" fill="#526875" >Evidence-based review</text>
+<rect x="680" y="129" width="13" height="13" rx="3" fill="#315fa9" stroke="none"/>
+<text x="703" y="142" font-size="16" font-weight="400" fill="#526875" >Software execution</text>
+<rect x="1010" y="129" width="13" height="13" rx="3" fill="#996114" stroke="none"/>
+<text x="1033" y="142" font-size="16" font-weight="400" fill="#526875" >Executable validation</text>
+<rect x="1360" y="129" width="13" height="13" rx="3" fill="#b05235" stroke="none"/>
+<text x="1383" y="142" font-size="16" font-weight="400" fill="#526875" >Targeted repair</text>
+<rect x="40" y="180" width="315" height="118" rx="12" fill="white" stroke="#d3e0e5"/>
+<text x="59" y="207" font-size="14" font-weight="650" fill="#087769" >USER INTENT</text>
+<text x="59" y="239" font-size="25" font-weight="650" fill="#173143" >Prompt + references</text>
+<text x="59" y="267" font-size="17" font-weight="400" fill="#526875" >Theme · characters · play intent</text>
+<a href="#role-details" data-role="coordinator" aria-label="Inspect Executing agent / coordinator"><title>Executing agent / coordinator: Execution and recovery</title>
+<rect x="395" y="180" width="1095" height="118" rx="12" fill="#183646" stroke="#183646"/>
+<text x="417" y="209" font-size="15" font-weight="650" fill="#8cdbc9" letter-spacing="0.5">EXECUTING AGENT + WORKFLOW ORCHESTRATOR</text>
+<text x="417" y="244" font-size="29" font-weight="600" fill="white" >Coordinate design, execution and repair</text>
+<text x="417" y="276" font-size="19" font-weight="400" fill="#d3e4eb" >Sequence specialist work · route corrections · preserve task IDs / evidence · resume affected stages</text>
+</a>
+<path d="M355,239 L395,239" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)"/>
+<rect x="1530" y="180" width="350" height="118" rx="12" fill="#eaf6f1" stroke="#bdddcf"/>
+<text x="1549" y="207" font-size="13" font-weight="650" fill="#087769" >AFTER ALL REQUIRED GATES</text>
+<text x="1549" y="239" font-size="25" font-weight="650" fill="#173143" >Playable world</text>
+<text x="1549" y="268" font-size="17" font-weight="400" fill="#173143" >2 activities · 3 views · 5 channels</text>
+<text x="40" y="345" font-size="19" font-weight="650" fill="#173143" >01  COOPERATIVE DESIGN</text>
+<text x="1100" y="345" font-size="16" font-weight="400" fill="#526875" >Specialists exchange validated artifacts</text>
+<path d="M943,298 L943,365 L205,365 L205,390" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)"/>
+<path d="M943,365 L578,365 L578,390" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)"/>
+<path d="M943,365 L951,365 L951,390" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)"/>
+<path d="M943,365 L1324,365 L1324,390" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)"/>
+<a href="#role-details" data-role="design" aria-label="Inspect Game Design Agent"><title>Game Design Agent: Model planning role</title>
+<rect x="40" y="390" width="330" height="224" rx="12" fill="white" stroke="#d3e0e5"/>
+<rect x="40" y="390" width="5" height="224" rx="2" fill="#087769" stroke="#087769"/>
+<text x="58" y="417" font-size="13" font-weight="650" fill="#087769" letter-spacing="0.6">SPECIALIST DESIGN ROLE</text>
+<text x="58" y="447" font-size="24" font-weight="650" fill="#173143" >Game Design Agent</text>
+<text x="58" y="478" font-size="13" font-weight="650" fill="#087769" >READ</text>
+<text x="58" y="500" font-size="16" font-weight="400" fill="#173143" >Prompt + reference images</text>
+<text x="58" y="531" font-size="17" font-weight="400" fill="#526875" >Define theme, characters and scope</text>
+<text x="58" y="555" font-size="17" font-weight="400" fill="#526875" >Specify combat / exploration intent</text>
+<text x="58" y="586" font-size="15" font-weight="600" fill="#087769" >WRITE  GameSpec</text>
+</a>
+<a href="#role-details" data-role="asset" aria-label="Inspect Asset Planning Agent"><title>Asset Planning Agent: Model planning role</title>
+<rect x="413" y="390" width="330" height="224" rx="12" fill="white" stroke="#d3e0e5"/>
+<rect x="413" y="390" width="5" height="224" rx="2" fill="#087769" stroke="#087769"/>
+<text x="431" y="417" font-size="13" font-weight="650" fill="#087769" letter-spacing="0.6">SPECIALIST DESIGN ROLE</text>
+<text x="431" y="447" font-size="24" font-weight="650" fill="#173143" >Asset Planning Agent</text>
+<text x="431" y="478" font-size="13" font-weight="650" fill="#087769" >READ</text>
+<text x="431" y="500" font-size="16" font-weight="400" fill="#173143" >GameSpec + concept image</text>
+<text x="431" y="531" font-size="17" font-weight="400" fill="#526875" >Choose new Tripo identity assets</text>
+<text x="431" y="555" font-size="17" font-weight="400" fill="#526875" >Assign scalable construction to Blender</text>
+<text x="431" y="586" font-size="15" font-weight="600" fill="#087769" >WRITE  Asset demands</text>
+</a>
+<a href="#role-details" data-role="art" aria-label="Inspect Art Direction Agent"><title>Art Direction Agent: Model planning role</title>
+<rect x="786" y="390" width="330" height="224" rx="12" fill="white" stroke="#d3e0e5"/>
+<rect x="786" y="390" width="5" height="224" rx="2" fill="#087769" stroke="#087769"/>
+<text x="804" y="417" font-size="13" font-weight="650" fill="#087769" letter-spacing="0.6">SPECIALIST DESIGN ROLE</text>
+<text x="804" y="447" font-size="24" font-weight="650" fill="#173143" >Art Direction Agent</text>
+<text x="804" y="478" font-size="13" font-weight="650" fill="#087769" >READ</text>
+<text x="804" y="500" font-size="16" font-weight="400" fill="#173143" >Concept + observed resources</text>
+<text x="804" y="531" font-size="17" font-weight="400" fill="#526875" >Set palette and material hierarchy</text>
+<text x="804" y="555" font-size="17" font-weight="400" fill="#526875" >Give each region a distinct visual role</text>
+<text x="804" y="586" font-size="15" font-weight="600" fill="#087769" >WRITE  Art plan</text>
+</a>
+<a href="#role-details" data-role="world" aria-label="Inspect World Design Agents"><title>World Design Agents: Layout planning plus conditional exploration refinement</title>
+<rect x="1159" y="390" width="330" height="224" rx="12" fill="white" stroke="#d3e0e5"/>
+<rect x="1159" y="390" width="5" height="224" rx="2" fill="#087769" stroke="#087769"/>
+<text x="1177" y="417" font-size="13" font-weight="650" fill="#087769" letter-spacing="0.6">SPECIALIST DESIGN ROLE</text>
+<text x="1177" y="447" font-size="24" font-weight="650" fill="#173143" >World Design Agents</text>
+<text x="1177" y="478" font-size="13" font-weight="650" fill="#087769" >READ</text>
+<text x="1177" y="500" font-size="16" font-weight="400" fill="#173143" >Art plan + supported resources</text>
+<text x="1177" y="531" font-size="17" font-weight="400" fill="#526875" >Compose encounter, routes and places</text>
+<text x="1177" y="555" font-size="17" font-weight="400" fill="#526875" >Layout → exploration refinement</text>
+<text x="1177" y="586" font-size="15" font-weight="600" fill="#087769" >WRITE  Scene spec + itinerary</text>
+</a>
+<text x="40" y="658" font-size="19" font-weight="650" fill="#173143" >02  SHARED RUN ARTIFACTS</text>
+<rect x="40" y="680" width="1450" height="108" rx="12" fill="#edf4f1" stroke="#c5dcd4"/>
+<text x="60" y="709" font-size="14" font-weight="650" fill="#087769" >INTENT</text>
+<text x="60" y="739" font-size="16" font-weight="400" fill="#526875" >GameSpec · concept · asset demands</text>
+<text x="420" y="709" font-size="14" font-weight="650" fill="#087769" >PREPARED RESOURCES</text>
+<text x="420" y="739" font-size="16" font-weight="400" fill="#526875" >Meshes · PBR maps · rigs · provenance</text>
+<text x="793" y="709" font-size="14" font-weight="650" fill="#087769" >WORLD CONTRACT</text>
+<text x="793" y="739" font-size="16" font-weight="400" fill="#526875" >Art plan · metric layout · route itinerary</text>
+<text x="1166" y="709" font-size="14" font-weight="650" fill="#087769" >ACCEPTANCE RECORD</text>
+<text x="1166" y="739" font-size="16" font-weight="400" fill="#526875" >Current evidence · checks · review issues</text>
+<text x="60" y="770" font-size="15" font-weight="400" fill="#526875" >Named dependencies + JSON / files + source hashes</text>
+<text x="962" y="770" font-size="15" font-weight="400" fill="#526875" >No prior-case assets required in fresh mode</text>
+<path d="M350,614 L350,680" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)" marker-start="url(#design)"/>
+<path d="M723,614 L723,680" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)" marker-start="url(#design)"/>
+<path d="M1096,614 L1096,680" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)" marker-start="url(#design)"/>
+<path d="M1469,614 L1469,680" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)" marker-start="url(#design)"/>
+<text x="40" y="842" font-size="19" font-weight="650" fill="#173143" >03  SOFTWARE EXECUTION</text>
+<path d="M350,788 L350,874" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)" marker-start="url(#evidence)"/>
+<rect x="40" y="874" width="330" height="142" rx="12" fill="#f0f5fc" stroke="#c7d7eb"/>
+<text x="58" y="905" font-size="24" font-weight="650" fill="#315fa9" >gpt-image-2</text>
+<text x="58" y="935" font-size="16" font-weight="400" fill="#173143" >Concept generation / reference editing</text>
+<text x="58" y="961" font-size="16" font-weight="400" fill="#526875" >Visual design target</text>
+<text x="58" y="994" font-size="14" font-weight="550" fill="#315fa9" >Prompt ↔ concept</text>
+<path d="M723,788 L723,874" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)" marker-start="url(#evidence)"/>
+<rect x="413" y="874" width="330" height="142" rx="12" fill="#f0f5fc" stroke="#c7d7eb"/>
+<text x="431" y="905" font-size="24" font-weight="650" fill="#315fa9" >Tripo + public PBR</text>
+<text x="431" y="935" font-size="16" font-weight="400" fill="#173143" >New characters / distinctive objects</text>
+<text x="431" y="961" font-size="16" font-weight="400" fill="#526875" >Matched maps + source receipts</text>
+<text x="431" y="994" font-size="14" font-weight="550" fill="#315fa9" >Requests ↔ sources</text>
+<path d="M1096,788 L1096,874" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)" marker-start="url(#evidence)"/>
+<rect x="786" y="874" width="330" height="142" rx="12" fill="#f0f5fc" stroke="#c7d7eb"/>
+<text x="804" y="905" font-size="24" font-weight="650" fill="#315fa9" >Blender</text>
+<text x="804" y="935" font-size="16" font-weight="400" fill="#173143" >Cleanup · rigging · world construction</text>
+<text x="804" y="961" font-size="16" font-weight="400" fill="#526875" >Detailed scene + structural whitebox</text>
+<text x="804" y="994" font-size="14" font-weight="550" fill="#315fa9" >Specs ↔ geometry / rigs</text>
+<path d="M1469,788 L1469,874" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)" marker-start="url(#evidence)"/>
+<rect x="1159" y="874" width="330" height="142" rx="12" fill="#f0f5fc" stroke="#c7d7eb"/>
+<text x="1177" y="905" font-size="24" font-weight="650" fill="#315fa9" >Unreal Engine</text>
+<text x="1177" y="935" font-size="16" font-weight="400" fill="#173143" >Retargeting · lighting · gameplay</text>
+<text x="1177" y="961" font-size="16" font-weight="400" fill="#526875" >Combat / exploration · three cameras</text>
+<text x="1177" y="994" font-size="14" font-weight="550" fill="#315fa9" >Import / play contracts</text>
+<text x="40" y="1058" font-size="19" font-weight="650" fill="#173143" >04  CURRENT EVIDENCE + EXECUTABLE CHECKS</text>
+<rect x="40" y="1078" width="1450" height="88" rx="12" fill="#f7f1e6" stroke="#e0d1b3"/>
+<text x="60" y="1110" font-size="19" font-weight="500" fill="#173143" >Source / deformation views · UE routes / destinations · early all-condition coverage · gameplay / camera QA</text>
+<text x="60" y="1139" font-size="17" font-weight="400" fill="#526875" >Calibrated five-channel outputs · exact verified export reuse · final pair validation · complete delivery</text>
+<path d="M951,1016 L951,1078" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)"/>
+<path d="M1324,1016 L1324,1078" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)"/>
+<text x="1530" y="345" font-size="19" font-weight="650" fill="#7553a4" >OBSERVE &amp; CRITIQUE</text>
+<rect x="1530" y="366" width="350" height="814" rx="12" fill="#f3eef8" stroke="#dacfea"/>
+<a href="#role-details" data-role="source" aria-label="Inspect Source Review Agent"><title>Source Review Agent: Vision role embedded in source preparation</title>
+<rect x="1548" y="390" width="314" height="176" rx="12" fill="white" stroke="#dacfea"/>
+<text x="1563" y="417" font-size="13" font-weight="650" fill="#7553a4" >VISION / REVIEW ROLE</text>
+<text x="1563" y="449" font-size="21" font-weight="650" fill="#173143" >Source Review Agent</text>
+<text x="1563" y="478" font-size="17" font-weight="400" fill="#526875" >Check anatomy, fused forms,</text>
+<text x="1563" y="503" font-size="17" font-weight="400" fill="#526875" >silhouette and source orientation</text>
+<text x="1563" y="543" font-size="15" font-weight="400" fill="#7553a4" >Approval / defects + landmarks</text>
+</a>
+<a href="#role-details" data-role="preflight" aria-label="Inspect Visual Preflight Agent"><title>Visual Preflight Agent: Model visual-review role</title>
+<rect x="1548" y="614" width="314" height="176" rx="12" fill="white" stroke="#dacfea"/>
+<text x="1563" y="641" font-size="13" font-weight="650" fill="#7553a4" >VISION / REVIEW ROLE</text>
+<text x="1563" y="673" font-size="21" font-weight="650" fill="#173143" >Visual Preflight Agent</text>
+<text x="1563" y="702" font-size="17" font-weight="400" fill="#526875" >Compare actual UE views with</text>
+<text x="1563" y="727" font-size="17" font-weight="400" fill="#526875" >design identity and spatial intent</text>
+<text x="1563" y="767" font-size="15" font-weight="400" fill="#7553a4" >Cited defects / diagnostic requests</text>
+</a>
+<a href="#role-details" data-role="final" aria-label="Inspect Final Review Agent"><title>Final Review Agent: Model review plus mandatory executable gates</title>
+<rect x="1548" y="838" width="314" height="176" rx="12" fill="white" stroke="#dacfea"/>
+<text x="1563" y="865" font-size="13" font-weight="650" fill="#7553a4" >VISION / REVIEW ROLE</text>
+<text x="1563" y="897" font-size="21" font-weight="650" fill="#173143" >Final Review Agent</text>
+<text x="1563" y="926" font-size="17" font-weight="400" fill="#526875" >Review current art together with</text>
+<text x="1563" y="951" font-size="17" font-weight="400" fill="#526875" >gameplay, camera and data checks</text>
+<text x="1563" y="991" font-size="15" font-weight="400" fill="#7553a4" >Approval only after required gates</text>
+</a>
+<path d="M1490,1122 L1510,1122 L1510,477 L1548,477" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)"/>
+<path d="M1510,701 L1548,701" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)"/>
+<path d="M1510,925 L1548,925" fill="none" stroke="#315fa9" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#evidence)"/>
+<path d="M1862,477 L1873,477 L1873,1044 L1705,1044 L1705,1064" fill="none" stroke="#b05235" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#repair)" stroke-dasharray="7 6"/>
+<path d="M1862,701 L1873,701" fill="none" stroke="#b05235" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#repair)" stroke-dasharray="7 6"/>
+<path d="M1705,1014 L1705,1064" fill="none" stroke="#b05235" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#repair)" stroke-dasharray="7 6"/>
+<rect x="1548" y="1064" width="314" height="96" rx="12" fill="#fbede7" stroke="#dfbdaf"/>
+<text x="1563" y="1094" font-size="13" font-weight="650" fill="#b05235" >STRUCTURED ISSUE → OWNER</text>
+<text x="1563" y="1120" font-size="16" font-weight="400" fill="#526875" >Evidence · problem · repair</text>
+<text x="1563" y="1144" font-size="16" font-weight="400" fill="#526875" >Verification for the next revision</text>
+<path d="M1862,1113 L1907,1113 L1907,159 L1240,159 L1240,180" fill="none" stroke="#b05235" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#repair)" stroke-dasharray="7 6"/>
+<path d="M1862,925 L1893,925 L1893,320 L1705,320 L1705,298" fill="none" stroke="#087769" stroke-width="2.1" stroke-linejoin="round" marker-end="url(#design)"/>
+<text x="40" y="1213" font-size="14" font-weight="650" fill="#b05235" >REPAIR LOOP</text>
+<text x="205" y="1213" font-size="20" font-weight="500" fill="#b05235" >Cited failure → responsible agent / adapter → scoped revision → new evidence → re-review</text>
+<text x="40" y="1250" font-size="17" font-weight="400" fill="#526875" >Role collaboration is mediated by run artifacts; the local stage executor is sequential. Review does not replace deterministic validation.</text>
+<text x="40" y="1278" font-size="16" font-weight="400" fill="#526875" >World design includes conditional exploration refinement. Structural repairs use the executing agent; only bounded lighting patches are CLI-automatic.</text>
+</svg>

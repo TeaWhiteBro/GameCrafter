@@ -1,0 +1,302 @@
+{
+  "version": "1.2.0",
+  "source": "game_pipeline.cli.graph + explicit design bootstrap",
+  "nodes": [
+    {
+      "name": "design",
+      "adapter": "agent.design",
+      "dependencies": [],
+      "title": "Brief → GameSpec",
+      "owner": "Agent",
+      "detail": "Bootstrap design call validates the full brief and compact scene seed before the production DAG."
+    },
+    {
+      "name": "concept",
+      "adapter": "image.gpt_image",
+      "dependencies": [],
+      "title": "Concept image",
+      "owner": "Gateway",
+      "detail": "New image or reference-conditioned edit; preserve submission/response before download."
+    },
+    {
+      "name": "asset_demands",
+      "adapter": "agent.environment_demands",
+      "dependencies": [
+        "concept"
+      ],
+      "title": "Asset allocation",
+      "owner": "Agent",
+      "detail": "Visual identity, new distinctive sources, public PBR choices and scalable Blender construction."
+    },
+    {
+      "name": "surface_assets",
+      "adapter": "resources.public_surfaces",
+      "dependencies": [
+        "asset_demands"
+      ],
+      "title": "Public PBR sources",
+      "owner": "Validator",
+      "detail": "Matched maps from selected public sources; license, checksums and run-local files."
+    },
+    {
+      "name": "environment_assets",
+      "adapter": "environment.generate",
+      "dependencies": [
+        "asset_demands",
+        "surface_assets"
+      ],
+      "title": "Environment sources",
+      "owner": "Mixed",
+      "detail": "New Tripo props/vegetation/exteriors, Blender preparation and multi-view source review."
+    },
+    {
+      "name": "art_plan",
+      "adapter": "agent.art_plan",
+      "dependencies": [
+        "concept",
+        "environment_assets"
+      ],
+      "title": "Art direction",
+      "owner": "Agent",
+      "detail": "Actual albedo evidence, palette hierarchy and distinct regional functions."
+    },
+    {
+      "name": "scene_layout",
+      "adapter": "agent.scene_layout",
+      "dependencies": [
+        "concept",
+        "art_plan"
+      ],
+      "title": "Scene layout",
+      "owner": "Agent",
+      "detail": "Supported metric architecture, terrain, material roles and spawns."
+    },
+    {
+      "name": "exploration_plan",
+      "adapter": "agent.exploration_plan",
+      "dependencies": [
+        "scene_layout",
+        "concept",
+        "art_plan"
+      ],
+      "title": "Exploration network",
+      "owner": "Mixed",
+      "detail": "Branching physical roads, varied destinations and a complete itinerary."
+    },
+    {
+      "name": "mesh_player",
+      "adapter": "mesh.source",
+      "dependencies": [],
+      "title": "Player source",
+      "owner": "Gateway",
+      "detail": "New text/image/multiview mesh task; same-run remote ID recovery."
+    },
+    {
+      "name": "rig_player",
+      "adapter": "blender.rig",
+      "dependencies": [
+        "mesh_player"
+      ],
+      "title": "Player rig + QA",
+      "owner": "Mixed",
+      "detail": "Source inspection, cleanup, semantic binding or preserved skin, five deformation poses."
+    },
+    {
+      "name": "mesh_boss",
+      "adapter": "mesh.source",
+      "dependencies": [],
+      "title": "Boss source",
+      "owner": "Gateway",
+      "detail": "New source geometry with complete separated humanoid anatomy."
+    },
+    {
+      "name": "rig_boss",
+      "adapter": "blender.rig",
+      "dependencies": [
+        "mesh_boss"
+      ],
+      "title": "Boss rig + QA",
+      "owner": "Mixed",
+      "detail": "Independent anatomy, joints, weights, stretching and material checks."
+    },
+    {
+      "name": "scene",
+      "adapter": "blender.scene",
+      "dependencies": [
+        "exploration_plan"
+      ],
+      "title": "Detailed + structural scene",
+      "owner": "Blender",
+      "detail": "Shared layout and transforms; detailed mesh, structural whitebox, routes and terrain reports."
+    },
+    {
+      "name": "ue_project",
+      "adapter": "ue.project",
+      "dependencies": [],
+      "title": "Isolated UE project",
+      "owner": "Unreal",
+      "detail": "Original runtime code and user-installed engine motion dependency; no inherited map."
+    },
+    {
+      "name": "animations",
+      "adapter": "ue.animation",
+      "dependencies": [
+        "ue_project",
+        "rig_player",
+        "rig_boss"
+      ],
+      "title": "Motion retargeting",
+      "owner": "Unreal",
+      "detail": "14 motion slots, semantic IK chains and measured locomotion stride."
+    },
+    {
+      "name": "ue_assemble",
+      "adapter": "ue.assemble",
+      "dependencies": [
+        "ue_project",
+        "animations",
+        "scene"
+      ],
+      "title": "Rendering + gameplay",
+      "owner": "Unreal",
+      "detail": "PBR, Lumen, collision, combat, roaming and three switchable cameras."
+    },
+    {
+      "name": "scene_preflight",
+      "adapter": "ue.scene_preflight",
+      "dependencies": [
+        "ue_assemble",
+        "scene",
+        "concept"
+      ],
+      "title": "Current-view preflight",
+      "owner": "Mixed",
+      "detail": "Actual overview, full routes and centered destination views; inspect composition before full capture."
+    },
+    {
+      "title": "Early all-condition coverage",
+      "owner": "Validator",
+      "detail": "All requested camera/activity jobs are captured at their full final settings and validated before long gameplay QA; exploration player occlusion is checked. Immutable verified exports may be reused later; calibration and final pair validation remain mandatory.",
+      "name": "capture_probe",
+      "adapter": "ue.capture_probe",
+      "dependencies": [
+        "ue_assemble",
+        "scene_preflight"
+      ]
+    },
+    {
+      "name": "playtest",
+      "adapter": "ue.playtest",
+      "dependencies": [
+        "ue_assemble",
+        "scene_preflight",
+        "capture_probe"
+      ],
+      "title": "Gameplay regression",
+      "owner": "Validator",
+      "detail": "Movement, actual hits, reset, visibility, frame timing, full routes and valid facing fault injection."
+    },
+    {
+      "name": "camera_validation",
+      "adapter": "ue.camera_validation",
+      "dependencies": [
+        "ue_assemble",
+        "playtest"
+      ],
+      "title": "Camera switching",
+      "owner": "Validator",
+      "detail": "Same-session first → third → isometric → third; input, owner visibility and default/switch policy."
+    },
+    {
+      "name": "capture_plan",
+      "adapter": "agent.capture_plan",
+      "dependencies": [
+        "ue_assemble",
+        "playtest",
+        "camera_validation"
+      ],
+      "title": "Condition plan",
+      "owner": "Validator",
+      "detail": "Three cameras × two activities; active start and five required channels. This adapter is deterministic."
+    },
+    {
+      "name": "calibration",
+      "adapter": "ue.calibration",
+      "dependencies": [
+        "ue_assemble",
+        "capture_plan"
+      ],
+      "title": "Independent calibration",
+      "owner": "Validator",
+      "detail": "Known geometry checks projection, RGB edges, depth, IDs and whitebox anchors."
+    },
+    {
+      "name": "dataset",
+      "adapter": "ue.dataset_paired",
+      "dependencies": [
+        "ue_assemble",
+        "capture_plan",
+        "calibration",
+        "capture_probe"
+      ],
+      "title": "Five-channel capture",
+      "owner": "Unreal",
+      "detail": "Post-animation synchronized native buffers plus PNG/NPY/JSON and viewing videos."
+    },
+    {
+      "name": "pair_validation",
+      "adapter": "dataset.validate_pairs",
+      "dependencies": [
+        "ue_assemble",
+        "capture_plan",
+        "calibration",
+        "dataset"
+      ],
+      "title": "Native/export validation",
+      "owner": "Validator",
+      "detail": "Frame-by-frame comparisons, integer label roundtrip, active contact and complete outputs."
+    },
+    {
+      "name": "review",
+      "adapter": "agent.review",
+      "dependencies": [
+        "playtest",
+        "concept",
+        "scene",
+        "rig_player",
+        "rig_boss",
+        "camera_validation",
+        "pair_validation",
+        "scene_preflight",
+        "art_plan",
+        "exploration_plan"
+      ],
+      "title": "Final visual review",
+      "owner": "Agent",
+      "detail": "Current normal-run art, anatomy and all required test evidence; no stale screenshots."
+    },
+    {
+      "name": "delivery",
+      "adapter": "release.playable",
+      "dependencies": [
+        "review",
+        "playtest",
+        "dataset",
+        "scene_preflight",
+        "camera_validation",
+        "capture_plan",
+        "calibration",
+        "pair_validation",
+        "capture_probe",
+        "art_plan",
+        "exploration_plan",
+        "surface_assets",
+        "asset_demands",
+        "environment_assets"
+      ],
+      "title": "Accepted release",
+      "owner": "Validator",
+      "detail": "Exact project and launcher after hard gates. Executing agent then verifies replay and actual launch."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "schema_version": 2,
+  "purpose": "Production constraints for planning, preparation and evidence-bound repair. Rules constrain the process, not entities or themes.",
+  "asset_spec": [
+    "Assign distinctive isolated exterior landmarks and vegetation to Tripo; assign traversable buildings, passages, roads, terrain and scalable repetitions to Blender. Generated exteriors are not certified interiors.",
+    "Reserve new generation for identity-critical missing assets. Submit independent remote assets before polling; preserve task IDs through local repair. Do not regenerate all sources after a local scene or runtime failure.",
+    "Describe complete branching anatomy or botanical structure, intentional gaps, target physical height and visible source acceptance. Do not repair melted geometry by scattering many copies.",
+    "Read installed source usage_guidance. A specimen strip or sample sheet is not a volumetric plant; choose its reviewed individual-specimen representation when scattering.",
+    "Prioritize the few missing sources that establish the requested visual identity, including near-view architecture or technology when central to the brief. Do not discover all identity-critical assets only after full scene assembly.",
+    "Fresh production has no previous case meshes or private catalogs. Choose public PBR source IDs and new distinctive generation for this brief; standard installed motion templates remain an explicit dependency."
+  ],
+  "art_plan": [
+    "Select actual albedo swatches and matched PBR channels. Multiplicative tint cannot produce opaque bright paint from dark brown wood; use the supported paint parameters when appropriate.",
+    "Plan visual masses for the combat margins, every destination, connecting routes and outer background. Instance count alone does not establish coverage or composition; do not alternate global overplanting and global removal.",
+    "Give each region a functional structure, ground transition, foreground/middle/background relationship and palette role. The style may be natural, cultivated or urban; no compulsory ruins, moss, pink flowers or low saturation.",
+    "Retain accepted functional layouts while batching diagnosed local repairs. A cropped or foreshortened structure needs a matching side/elevated diagnostic before reconstruction.",
+    "Make emissive elements physically mounted and compose broad value/color masses first. Futuristic identity may require characteristic equipment or vehicle silhouettes as well as signs; parked props do not imply a driving mechanic.",
+    "Use distinct functional paving/work surfaces with bounded local wetness. Inspect the final UE coordinate basis at asymmetric locations before diagnosing a spatial material-mask mismatch.",
+    "Surface masks must reach shader consumers. Preserve local wear color, matched normal/roughness and physical scale. Overcast scattering and practical-light levels are independent decisions from exposure.",
+    "NullRHI import does not compile every runtime shader. Reject native material fallback before trusting screenshots. Color-transfer corrections are source-specific; compare native RGB before applying any transfer correction."
+  ],
+  "scene_layout": [
+    "Use per-source usage_guidance, preserve_aspect, placement and physical dimensions. Asset scale is a target envelope in metres, not an arbitrary multiplier. Buildings use their base; rocks may use an appropriate footprint; keep complete objects clear of routes.",
+    "Use one supported elevation contract for detailed terrain, paving, foundations and structural whitebox. Continuous support and shallow physical seams are required; inherited floor heights can bury a new court.",
+    "Plan destination edges and connecting landscape together before increasing scatter counts. Keep intentional combat space open and compose its margins; preserve distinct destinations and at least one real route junction.",
+    "Repeated non-colliding detail uses shared source geometry automatically; collision geometry retains independent clearance checks. Default exports are bounded to 4 million source triangles per batch and UE workers to 8 million. Do not flatten thousands of repeated plants into a single huge FBX.",
+    "Resolve resource, placement, semantic and missing-generated-asset errors together before starting Blender. Actual saved-geometry, current UE camera and performance checks still decide acceptance.",
+    "Single-sided panels preserve authored winding; closed-mesh normal recalculation can reverse their visible face. Keep physical backing, clear routes and shared structural transforms.",
+    "Roof services need supported bases and dimensioned envelopes. Select transformed component groups in world coordinates; a local-coordinate selection can silently miss displaced parts.",
+    "Destination diagnostics must anchor the actual requested place and verify its projection. Default and switched camera modes apply the same projection-specific render policy.",
+    "Normalize structure ownership and reject conflicting duplicate placement before Blender. Route elevation is shape-preserving; probe real walking support with a bounded foot envelope, never teleport the probe onto a roof.",
+    "Use footprint-aware foundations. Preserve natural-court relief when requested. Apply deposits and ruts after flattening, then enforce stair/floor envelopes and excavated channels so additive detail cannot bury them.",
+    "Size the terrain apron for all requested camera footprints, not only the combat disc. Exterior silhouettes and actual route boundaries must agree.",
+    "Masonry, timber lodge, urban frontage and natural terrain are selectable construction capabilities. Do not substitute one fixed building language or material palette across every new prompt."
+  ],
+  "review_and_capture": [
+    "An ambiguous shadow, cropped arch or disconnected-looking gallery requires current source-matched oblique and ground-level diagnostics before geometry reconstruction; preserve prior refusal and explain the resolved interpretation.",
+    "Run the exact full first-person combat five-channel probe before long gameplay QA. Validate real contact, early activity, capsule presence and the actual near plane.",
+    "Same-run verified export reuse requires matching source content, job, rendering, exporter and every output hash. Do not alter upstream committed exports. Final independent calibration and native/export gates still apply.",
+    "Independent camera runs can exhibit sub-centimetre bone drift despite fixed simulation steps. Claim exact modality pairing within each capture, not bit-identical cross-run trajectories.",
+    "Use diagnose and impact before repeated full rebuilds. Record repair cause, new evidence, owner, scope and result. Timings include executing-agent work; uncertain gaps are not established idle time."
+  ],
+  "convergence": [
+    "Preserve the original brief in source, environmental and final reviews; use built descriptors to resolve intent without treating names as visual proof.",
+    "After three distinct environmental refusals, require a diagnosis tied to the latest refusal and current source, with complete issue coverage and hashed evidence; distinguish uncertainty from reconstruction.",
+    "Test complete requested camera/activity clips early; retain immutable per-job exports and revalidate matching files in final pairing.",
+    "Check actual exploration player masks under canopy and architecture; an open-space camera-switch test cannot prove visibility along a route.",
+    "Support dry authored interiors and glass measurement policy explicitly; keep matched structural geometry and retain authoring winding.",
+    "Measure complete user wall time; fewer duplicate captures are an implementation change, not a proven end-to-end speedup."
+  ]
+}

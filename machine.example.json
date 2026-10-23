@@ -1,0 +1,27 @@
+{
+  "python": ".venv/Scripts/python.exe",
+  "blender": "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe",
+  "unreal_editor": "D:/UE_5.8/Engine/Binaries/Win64/UnrealEditor.exe",
+  "unreal_build": "D:/UE_5.8/Engine/Build/BatchFiles/Build.bat",
+  "engine_association": "5.8",
+  "build_root": "builds",
+  "animation_library": "D:/UE_5.8/Templates/TemplateResources/High/Characters/Content",
+  "gateway": {
+    "base_url": "https://gateway.ai.levelinfinite.com",
+    "planner_model": "YOUR_VISION_CAPABLE_CHAT_MODEL",
+    "image_model": "gpt-image-2",
+    "key_env": "LEVELINFINITE_API_KEY"
+  },
+  "budgets": {
+    "mesh_calls": 8,
+    "image_calls": 2,
+    "llm_calls": 100
+  },
+  "tool_versions": {
+    "blender": "5.2.1",
+    "unreal": "5.8",
+    "contracts": 1
+  },
+  "texture_library": {},
+  "mesh_library": {}
+}
