@@ -7,10 +7,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from scripts.build_release import source_files, SECRET, PRIVATE
+from scripts.build_release import source_files, SECRET, PRIVATE, BINARY
 from game_pipeline.core import read_json
 from game_pipeline.cli import graph
 from game_pipeline.workflow import configure
+
+# Published links and the public Hugging Face repository id are not machine identity.
+PUBLIC_REFERENCES = re.compile(r'https?://\S+|\b' + 'tea' + 'white' + r'/GameCrafter\b', re.I)
 
 
 def verify():
@@ -18,11 +21,14 @@ def verify():
     for path in selected:
         if not path.is_file():
             raise ValueError('Missing exported source: ' + str(path.relative_to(ROOT)))
+        if path.suffix in BINARY:
+            continue
         text = path.read_text(encoding='utf-8-sig')
         if SECRET.search(text) or PRIVATE.search(text):
             raise ValueError('Credential or private path: ' + str(path.relative_to(ROOT)))
         private_names = ['zhiyang' + 'deng', 'tea' + 'white', 'ZHI' + 'YAN~1']
-        if any(re.search(r'(?i)\b' + re.escape(name) + r'\b', text) for name in private_names):
+        scanned = PUBLIC_REFERENCES.sub('', text)
+        if any(re.search(r'(?i)\b' + re.escape(name) + r'\b', scanned) for name in private_names):
             raise ValueError('Machine-specific identity: ' + str(path.relative_to(ROOT)))
         if path.suffix == '.py':
             ast.parse(text, filename=str(path.relative_to(ROOT)))

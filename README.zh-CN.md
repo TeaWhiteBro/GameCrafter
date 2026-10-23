@@ -1,8 +1,28 @@
-# GameCrafter
+<div align="center">
 
-**面向可扩展、多玩法游戏世界生成的 Agentic 框架**
+<img src="assets/title_icon.png" width="88" alt="GameCrafter icon">
+
+# GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation
+
+Zhiyang Deng<sup>1,2,†</sup>, Xiyao Deng<sup>1,2,†</sup>, Yeying Jin<sup>1,2,‡,*</sup>
+
+<sup>1</sup>Tencent, <sup>2</sup>National University of Singapore
+
+<sup>†</sup>共同第一作者，工作完成于腾讯研究实习期间 · <sup>‡</sup>项目负责人 · <sup>*</sup>通讯作者
+
+[![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b.svg)](https://github.com/TeaWhiteBro/GameCrafter/blob/main/paper/GameCrafter.pdf)
+[![Project Page](https://img.shields.io/badge/Project-Page-2f6f4f.svg)](https://teawhite.cn/GameCrafter/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
 [English](README.md) | [简体中文](README.zh-CN.md)
+
+</div>
+
+![GameCrafter teaser](assets/teaser.jpg)
+
+<p align="center"><sub><b>GameCrafter 生成的 3D 游戏世界。</b>(a) 漫游与 Boss 战两种玩法；(b) 第一人称、第三人称与 2.5D 视角；(c) 在同一仿真状态和相机下采集、彼此对齐的 RGB、骨架、白膜、深度与语义数据。</sub></p>
+
+**GameCrafter** 用一句话生成一个高质量、多玩法的 3D 游戏世界。**规格引导的编排**（Specification-Guided Orchestration）协调各专职 Agent 与工具；**结构感知的资产合成**（Structure-Aware Asset Synthesis）让场景与角色既好看又带可执行结构；**多玩法世界实现**（Multi-Gameplay World Realization）把它们落到同一个运行时里，让漫游和 Boss 战共存；**闭环质量控制**（Closed-Loop Quality Control）结合视觉检查、试玩和迭代修复。每个世界还会产出在同一仿真内对齐的多视角、多模态数据。
 
 GameCrafter 协调设计与审查模型、生成服务、Blender 和 Unreal Engine，把文字或参考图转为可编辑、可玩的游戏 Demo。内置自由漫游与人形近战 Boss 战，支持三种视角及五种配对观测输出。
 
@@ -19,6 +39,12 @@ GameCrafter 协调设计与审查模型、生成服务、Blender 和 Unreal Engi
 各角色通过 JSON 协议与带哈希的产物协作。当前本地节点顺序执行，独立远程环境资产请求可重叠。CLI 只自动应用受限的光照参数修复，复杂结构和拓扑问题需要执行 Agent 处理。
 
 参见[完整流程图](docs/workflow.html)、[Agent 协作图](docs/agent-collaboration.html)、[阶段协议](docs/WORKFLOW.md)和[代码地图](docs/CODE_MAP.md)。
+
+## 十个生成的世界
+
+![GameCrafter 生成的十个世界](assets/scenes.jpg)
+
+论文中的十个世界，每个都由一句提示词生成。各世界的游玩视频见[项目主页](https://teawhite.cn/GameCrafter/)。
 
 ## 安装
 
@@ -114,3 +140,17 @@ $env:LEVELINFINITE_API_KEY = [System.Net.NetworkCredential]::new('', $gatewaySec
 ```
 
 原创源码与文档使用 [MIT](LICENSE)。UE 动作、软件、生成 mesh、参考图和下载材质分别遵循其许可，见[第三方说明](THIRD_PARTY_NOTICES.md)。源码包不包含引擎资产、密钥或已生成案例。
+
+## 引用
+
+如果 GameCrafter 对你的工作有帮助，请引用：
+
+```bibtex
+@misc{deng2026gamecrafter,
+  title  = {GameCrafter: An Agentic Framework for Multi-Gameplay Game World Generation},
+  author = {Deng, Zhiyang and Deng, Xiyao and Jin, Yeying},
+  year   = {2026},
+  note   = {Preprint},
+  url    = {https://teawhite.cn/GameCrafter/}
+}
+```

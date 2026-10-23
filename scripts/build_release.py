@@ -21,8 +21,10 @@ FILES = [
     'setup.ps1','requirements.lock.txt','toolchain.lock.json','machine.example.json','config/production_rules.json',
     'examples/local_assets.spec.json','examples/mesh_source_variants.json',
     'examples/benchmark_prompts.json','examples/prompts/agent_task.txt']
-DIRECTORIES = ['game_pipeline','adapters','templates/Source','tests','config','docs','.github','scripts','examples/prompts']
-SUFFIXES={'.py','.cpp','.h','.cs','.json','.md','.html','.css','.js','.svg','.txt','.yml','.yaml','.ps1'}
+DIRECTORIES = ['game_pipeline','adapters','templates/Source','tests','config','docs','.github','scripts','examples/prompts','assets']
+SUFFIXES={'.py','.cpp','.h','.cs','.json','.md','.html','.css','.js','.svg','.txt','.yml','.yaml','.ps1','.jpg','.png'}
+# README figures under assets/ are exported as-is; text checks apply to every other file.
+BINARY={'.jpg','.png'}
 SECRET = re.compile(r'\bsk-[A-Za-z0-9_\-]{12,}|Bearer\s+(?!\$|YOUR_|<|\{|\+)[A-Za-z0-9_\-]{18,}')
 PRIVATE = re.compile(r'[A-Z]:[/\\]+Users[/\\]+(?!YOUR_USER[/\\]|Public[/\\]|Default[/\\])[^/\\\s"\']+[/\\]|Documents[/\\]+Codex[/\\]+20\d\d',re.I)
 
@@ -46,6 +48,7 @@ def export(destination, archive=None):
     files=source_files()
     for p in files:
         if not p.is_file():raise ValueError('Missing source file: '+str(p.relative_to(ROOT)))
+        if p.suffix in BINARY:continue
         data=p.read_text(encoding='utf-8-sig')
         if SECRET.search(data) or PRIVATE.search(data):
             raise ValueError('Possible credential or private path in '+str(p.relative_to(ROOT)))
