@@ -12,6 +12,7 @@ Zhiyang Deng<sup>1,2,†</sup>, Xiyao Deng<sup>1,2,†</sup>, Yeying Jin<sup>1,2
 
 [![Paper](https://img.shields.io/badge/Paper-PDF-b31b1b.svg)](https://github.com/TeaWhiteBro/GameCrafter/blob/main/paper/GameCrafter.pdf)
 [![Project Page](https://img.shields.io/badge/Project-Page-2f6f4f.svg)](https://teawhite.cn/GameCrafter/)
+[![Scenes](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Scenes-ffcc4d.svg)](https://huggingface.co/datasets/teawhite/GameCrafter)
 [![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey.svg)](LICENSE)
 
 [English](README.md) | [简体中文](README.zh-CN.md)
@@ -51,7 +52,13 @@ GameCrafter 由论文中的四个部分组成：
 
 ![GameCrafter 生成的十个世界](assets/scenes.jpg)
 
-论文中的十个世界，每个都由一句提示词生成。各世界的游玩视频见[项目主页](https://teawhite.cn/GameCrafter/)。
+论文中的十个世界，每个都由一句提示词生成，游玩视频见[项目主页](https://teawhite.cn/GameCrafter/)。十个世界都已发布在 Hugging Face 的 [teawhite/GameCrafter](https://huggingface.co/datasets/teawhite/GameCrafter)，每个场景一个 ZIP（0.2–1.1 GB），都是完整、可编辑的 UE 5.8 工程，包含 C++ 源码、Windows 原生模块、生成提示词和便携启动器：
+
+```powershell
+hf download teawhite/GameCrafter 01_Sunlit_Mediterranean_Courtyard.zip --repo-type dataset --local-dir scenes
+```
+
+在装有 UE 5.8 的 Windows x64 上完整解压后双击 `PLAY.cmd`；打开 `GameDemo/GameDemo.uproject` 可编辑场景。游玩无需 Blender、Python 环境或 API 密钥。环境要求与操作说明见数据集主页。
 
 ## 安装
 
